@@ -58,7 +58,7 @@ export default function LoginPage() {
        Login 
             
                 </button>      
-                <a href='#' className='text-cadet text-md mt-10'>Forget Password?</a>
+                <a href='#forgetPassword' className='text-cadet text-md mt-10'>Forget Password?</a>
     </form>
  
     </div>
