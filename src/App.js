@@ -4,6 +4,7 @@ import {Route, Routes} from 'react-router-dom'
 import LoginPage from './pages/loginpage/LoginPage';
 import DashBoard from './pages/dashboard/DashBoard';
 import PageNotFound from './pages/404/PageNotFound';
+
 // import './styles/global-styles.css'
 function App() {
  

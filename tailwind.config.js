@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       extend:{
         fontFamily: {
-          'dancingScript': ['Dancing Script', 'cursive']
+          dancingScript: ['Dancing Script', 'cursive'],
+          Rampart: ["Rampart One", "cursive"]
         }
       },
       colors:{

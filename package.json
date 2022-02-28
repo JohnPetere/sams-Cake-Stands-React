@@ -12,7 +12,8 @@
     "react-scripts": "5.0.0",
     "react-svg-use": "^2.1.0",
     "typeface-dancing-script": "^1.1.13",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

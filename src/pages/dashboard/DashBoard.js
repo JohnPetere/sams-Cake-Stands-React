@@ -1,9 +1,12 @@
 import React from 'react'
 // import './styles/global-styles.css'
  import { Link } from 'react-router-dom'
-export default function DashBoard() {
+import NavBar from '../../components/navBar/NavBar'
+
+ export default function DashBoard() {
   return (
       <>
+      <NavBar/>
     <nav>
         <ul>
         <li>
