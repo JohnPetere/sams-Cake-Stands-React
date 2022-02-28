@@ -16,3 +16,13 @@
 
 ## Completed
 - Nothing
+
+
+## Installing Tailwind CSS
+
+```npm
+npm install -D tailwindcss postcss autoprefixer
+```
+```npm
+npx tailwindcss init
+```
