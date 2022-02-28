@@ -7,4 +7,46 @@
         @apply
         text-3xl
     }
+    .item {
+	@apply
+		bg-isabelline text-gray-100
+		text-xl font-bold
+		flex items-center content-center justify-center
+		rounded
+    }
+    .login-form {
+        @apply w-2/3 
+        px-3 
+        mt-4
+        mb-2 
+        md:mb-0
+        
+    }
+    .form-label{
+        @apply block uppercase 
+        tracking-wide 
+        text-fieryRose text-xs 
+        font-bold mb-2
+    }
+    .form-text{
+        @apply  appearance-none 
+        block w-full bg-gray-200 
+        text-gray-700 border 
+        border-red-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white
+    }
+    .login-title{
+        @apply font-bold text-5xl 
+          text-fieryRose mr-6
+           hover:text-darkPurple my-10
+    }
+  
+    /* font-dancingScript ADD THIS LATER to login-title */
 }
+/*   aeroBlue:'#D7FDF0',
+        cadet: '#556F7A',
+        fieryRose: '#FF5D73',
+        darkPurple: '#4B2142',
+        pinkLavender: '#D4AFCD',
+        isabelline: '#EEE6E6',
+        reallyRed: '#FF0000' */
