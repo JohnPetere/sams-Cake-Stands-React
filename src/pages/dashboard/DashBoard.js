@@ -7,7 +7,7 @@ import NavBar from '../../components/navBar/NavBar'
   return (
       <>
       <NavBar/>
-    <nav>
+    {/* <nav>
         <ul>
         <li>
             <Link to="/">Login Page</Link>
@@ -17,7 +17,7 @@ import NavBar from '../../components/navBar/NavBar'
         </li>
         </ul>
     </nav>
-    
+     */}
 
   </>
   )
