@@ -1,12 +1,21 @@
 // import Button from './components/button/Button'
+import {Route, Routes} from 'react-router-dom'
+// import {LoginPage, DashBoardPage, PageNotFound} from './pages'
+import LoginPage from './pages/loginpage/LoginPage';
+import DashBoard from './pages/dashboard/DashBoard';
+import PageNotFound from './pages/404/PageNotFound';
+// import './styles/global-styles.css'
 function App() {
  
   return (
-        <header>
-          <h1 className="text-3xl font-bold underline">React Starter Framework</h1>
-     
-         
-        </header>
+      <>
+       <Routes>
+          <Route index element={<LoginPage/>}/>
+          <Route path="dashboard" element={<DashBoard/>}/>
+          <Route path="*" element={<PageNotFound/>}/>
+          
+        </Routes>
+      </>
   );
 }
 

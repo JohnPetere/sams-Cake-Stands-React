@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .h1-test{
+        @apply
+        text-3xl
+    }
+}
