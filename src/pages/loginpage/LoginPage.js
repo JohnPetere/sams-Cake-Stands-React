@@ -28,9 +28,12 @@ export default function LoginPage() {
     
  
    <div className="flex justify-center items-center w-full h-screen">
-	<div className=" w-full h-full"><img className='w-full h-full' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg"></img></div>
-	<form className="item w-full h-full flex flex-col" onClick={goToDash} >
-        <h2 className="login-title">Sam's cake Stand</h2>
+	<div className=" w-full h-full"><img className='w-full h-full' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg" alt="Supposed to be fancy cakes"></img></div>
+	<form className="item w-full h-full flex flex-col" >
+        <h2 className="font-dancingScript font-bold text-5xl 
+          text-fieryRose mr-6
+         
+           hover:text-darkPurple my-10">Sam's cake Stand</h2>
         <Logo className='w-20 h-20'/>
         <div className='login-form'>
                     <label className='form-label' for="grid-first-name">
@@ -49,7 +52,7 @@ export default function LoginPage() {
                     
         </div> 
         
-        <button goToDash id="buy-button" type="submit" class="bg-aeroBlue  text-darkPurple hover:text-fieryRose font-bold py-5 px-40 mt-3 rounded-full hover:bg-white ">
+        <button onClick={goToDash} id="buy-button" type="submit" class="bg-aeroBlue  text-darkPurple hover:text-fieryRose font-bold py-5 px-40 mt-3 rounded-full hover:bg-white ">
        Login 
             
                 </button>      

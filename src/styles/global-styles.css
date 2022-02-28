@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,11 +35,6 @@
         text-gray-700 border 
         border-red-500 rounded py-3 px-4 mb-3 
         leading-tight focus:outline-none focus:bg-white
-    }
-    .login-title{
-        @apply font-bold text-5xl 
-          text-fieryRose mr-6
-           hover:text-darkPurple my-10
     }
   
     /* font-dancingScript ADD THIS LATER to login-title */
