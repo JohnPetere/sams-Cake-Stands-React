@@ -18,7 +18,7 @@ import NavBar from '../../components/navBar/NavBar'
         </ul>
     </nav>
      */}
-
+    
   </>
   )
 }
