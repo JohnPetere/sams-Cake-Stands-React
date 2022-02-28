@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .side-bar-item{
+        @apply block py-2.5 px-4 hover:text-darkPurple hover:font-bold
+    }
+    .side-bar-icon{
+        @apply inline object-contain h-7 w-7 mx-2
+    }
+}
