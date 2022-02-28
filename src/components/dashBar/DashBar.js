@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {ReactComponent as Inventory} from '../../styles/svg/icons/inventory-icon.svg'
-import {ReactComponent as Add} from '../../styles/svg/icons/add-icon.svg'
+// import {ReactComponent as Add} from '../../styles/svg/icons/add-icon.svg'
 import './dashBar.component.css'
 export default function DashBar() {
   return (
