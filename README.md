@@ -15,7 +15,6 @@
 - Node.js
 - JavaScript
 ## TODO
-- functioning Side Bar
 - Fake Content
 
 ### If TIME
@@ -26,6 +25,7 @@
 - Login Page
 - Nav Bar Module
 - Successful site deployments
+- 404 page
 
 ## Installing Tailwind CSS
 
