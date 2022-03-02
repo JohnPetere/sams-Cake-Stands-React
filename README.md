@@ -16,11 +16,12 @@
 - JavaScript
 ## TODO
 - Fake Content
-
+- Fix fonts not loading
+- viewport not working?
 ### If TIME
 - Figure how to get fonts to load...
-- Load in content programatically 
-
+- Load in content programatically ?
+- 
 ## Completed
 - Login Page
 - Nav Bar Module
