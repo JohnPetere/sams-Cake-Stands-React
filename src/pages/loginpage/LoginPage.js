@@ -17,20 +17,10 @@ export default function LoginPage() {
     }
   return (
     <>
-    <nav>
-       <ul>
-         <li>
-           <Link to="/">Login Page</Link>
-         </li>
-         <li>
-           <Link to="/dashboard">DashBoard Page</Link>
-         </li>
-       </ul>
-     </nav>
-    
+
  
    <div className="flex justify-center items-center w-full h-screen">
-	<div className=" w-full h-full"><img className='w-full h-full' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg" alt="Supposed to be fancy cakes"></img></div>
+	<div className="  w-full h-full"><img className='w-full h-full' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg" alt="Supposed to be fancy cakes"></img></div>
 	<form className="item w-full h-full flex flex-col" >
         <h2 className=" text-5xl font-dancingScript
           text-fieryRose mr-6
