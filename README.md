@@ -10,9 +10,10 @@
 
 ## Topics covered
 - React
-- Tailwin
+- Tailwind
 - React Router
-
+- Node.js
+- JavaScript
 ## TODO
 - functioning Side Bar
 - Fake Content
@@ -31,6 +32,7 @@
 ```npm
 npm install -D tailwindcss postcss autoprefixer
 ```
+- Installs tailwind for teh 
 ```npm
 npx tailwindcss init
 ```
