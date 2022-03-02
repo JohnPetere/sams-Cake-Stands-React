@@ -1,9 +1,8 @@
-// import { className } from 'postcss-selector-parser'
-import React from 'react'
-// import Icon from 'react-svg-use'
-// import './styles/global-styles.css'
 
- import { Link, useNavigate } from 'react-router-dom'
+import React from 'react'
+
+
+ import {  useNavigate } from 'react-router-dom'
  import "typeface-dancing-script"
 import { ReactComponent as Logo } from '../../styles/svg/branding/cake-logo.svg'
 export default function LoginPage() {
