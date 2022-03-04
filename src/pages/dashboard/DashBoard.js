@@ -3,17 +3,24 @@ import React from 'react'
 //  import { Link } from 'react-router-dom'
 import NavBar from '../../components/navBar/NavBar'
 import DashBar from '../../components/dashBar/DashBar'
+import ShopCard from '../../components/shopCard/ShopCard'
  export default function DashBoard() {
+ 
 
+  // btn.addEventListener("click", () => {
+  //   sidebar.classList.toggle("-translate-x-full");
+  // });
+  
   return (
       <>
     
       <NavBar/>
-      <div class="relative min-h-screen md:flex">
-          
+      <div className="relative min-h-screen md:flex">
+       
+       
       <DashBar/>
-        
-
+      <ShopCard/>
+      
     </div>
     
   </>

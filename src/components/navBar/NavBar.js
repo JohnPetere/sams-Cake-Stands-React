@@ -10,29 +10,28 @@ import {ReactComponent as Avatar} from '../../styles/svg/icons/navBar-Icons/avat
 import './navBar.components.css'    
 function NavBar() {
   
-  const btn = document.querySelector(".mobile-menu-button")
-  console.log("Button selection",btn)
+  function showDashBar(){
     const sidebar = document.querySelector(".sidebar");
-  console.log("button selection", sidebar)
-    // btn.addEventListener("click", () => {
-    //   sidebar.classList.toggle("-translate-x-full");
-    // });
+
+    sidebar.classList.toggle("-translate-x-full");
+
+    }
   return (
     <>
      <header className="flex-col">
-      <nav className="flex items-center justify-between flex-wrap bg-aeroBlue p-6 ">
-        <div className=" flex items-center flex-shrink-0 text-fieryRose mr-6 hover:text-darkPurple">
+      <nav className="flex items-center justify-between flex-wrap bg-aeroBlue p-6  ">
+        <div className="  flex items-center flex-shrink-0 text-fieryRose mr-6 hover:text-darkPurple">
          <Logo className=" object-contain  h-10 w-10 mx-3" alt="LOGO"/>
      
   
-          <Link  to='/' className="font-dancingScript font-extrabold text-3xl   ">Sams Cake Stand</Link>
+          <Link  to='/' className="font-dancingScript font-extrabold text-3xl  ">Sams Cake Stand</Link>
          
         </div>
-        <div class=" bg-aeroBlue flex justify-between md:hidden">
+        <div className=" bg-aeroBlue flex justify-between md:hidden">
     
-          <button className="mobile-menu-button p-2 focus:outline-none ">
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <button id="mobile-menu-bt" onClick={showDashBar} className="mobile-menu-button p-2 focus:outline-none ">
+            <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>

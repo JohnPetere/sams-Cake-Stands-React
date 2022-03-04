@@ -14,7 +14,7 @@ export default function LoginPage() {
         console.log("goToDash")
        navigation('dashboard')
     }
-
+   
   return (
     <>
 
@@ -44,7 +44,7 @@ export default function LoginPage() {
                     
         </div> 
         
-        <button onClick={goToDash} id="buy-button" type="submit" class=" bg-aeroBlue  text-darkPurple hover:text-fieryRose font-bold py-5 px-40 mt-3 rounded-full hover:bg-white ">
+        <button onClick={goToDash} id="buy-button" type="submit" className=" bg-aeroBlue  text-darkPurple hover:text-fieryRose font-bold py-5 px-40 mt-3 rounded-full hover:bg-white ">
        Login 
             
                 </button>      
