@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,9 +45,9 @@
     @font-face {
         font-family: 'Dancing Script';
         font-style: cursive;
-        src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-        /* src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap') */
-        
+        /* src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); */
+        /* src: url('./fonts/dancingScript/DancingScript-VariableFont_wght.ttf') */
+        src: url('./fonts/dancingScript/static/DancingScript-Bold.ttf');
     }
 }
 

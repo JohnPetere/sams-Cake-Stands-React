@@ -17,7 +17,7 @@ function NavBar() {
          <Logo className=" object-contain  h-10 w-10 mx-3" alt="LOGO"/>
      
   
-          <Link  to='/' class="font-bold text-2xl sm:text-2xl font-dancingScript ">Sams Cake Stand</Link>
+          <Link  to='/' className="font-dancingScript font-bold text-2xl sm:text-2xl  ">Sams Cake Stand</Link>
          
         </div>
         <div class=" bg-aeroBlue flex justify-between md:hidden">
