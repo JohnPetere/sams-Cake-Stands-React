@@ -14,6 +14,7 @@ export default function LoginPage() {
         console.log("goToDash")
        navigation('dashboard')
     }
+
   return (
     <>
 

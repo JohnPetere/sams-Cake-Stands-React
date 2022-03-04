@@ -4,6 +4,7 @@ import React from 'react'
 import NavBar from '../../components/navBar/NavBar'
 import DashBar from '../../components/dashBar/DashBar'
  export default function DashBoard() {
+
   return (
       <>
     
