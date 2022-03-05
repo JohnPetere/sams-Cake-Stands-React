@@ -1,72 +1,45 @@
+import reactDom from 'react-dom'
 import React from 'react'
-const cakeStands = {
-    "shop-items":{
-      "awdwad":{
-        "key": "key1",
-        "sku": "sku1",
-        "image":"fakePath1",
-        "price":"12.34",
-        "radius":"22"
+// const cakeStands = {
+//     "shop-items":{
+//       "awdwad":{
+//         "key": "key1",
+//         "sku": "sku1",
+//         "image":"fakePath1",
+//         "price":"12.34",
+//         "radius":"22"
   
-      },
-      "awdwad2":{
-        "key": "key2",
-        "sku": "sku2",
-        "image":"fakePath2",
-        "price":"12.34",
-        "radius":"23"
+//       },
+//       "awdwad2":{
+//         "key": "key2",
+//         "sku": "sku2",
+//         "image":"fakePath2",
+//         "price":"12.34",
+//         "radius":"23"
   
-      },
-      "awdwad3":{
-        "key": "key3",
-        "sku": "sku3",
-        "image":"fakePath3",
-        "price":"12.34",
-        "radius":"25"
+//       },
+//       "awdwad3":{
+//         "key": "key3",  
+//         "sku": "sku3",
+//         "image":"fakePath3",
+//         "price":"12.34",
+//         "radius":"25"
   
-      }
-    }
+//       }
+//     }
    
-  }
-  const addCakeStands = function(){
-    const cakeStandTemplate = document.querySelector("#shop-item-card").cloneNode(true)
-    cakeStandTemplate.classList.remove('hidden');
-    const shopItemslist = document.querySelector('#shop-items');
+//   }
 
-    const cards = cakeStands.values.map(cakeStand=>{
 
-       
-        console.log(cakeStand.title)
-        let cakeStandHtml = cakeStandTemplate.cloneNode(true);
 
-        let title = document.createElement('p')
-        title.textContent = cakeStand.title
-        const titleTag= cakeStandHtml.querySelector('#title')
-        titleTag.appendChild(title)
-        
-        let price = document.createElement('p')
-        price.textContent ="$"+cakeStand.price+ ".00"
-        const priceTag= cakeStandHtml.querySelector('#price')
-        priceTag.appendChild(price)
-        // cakeStandHtml.append(cakeStandHtml)
-        // shopItemslist.appendChild(cakeStandHtml.cloneNode(true)) // THIs works to add..
-
-        let radius = document.createElement('p')
-        radius.textContent = "Radius: " + cakeStand.radius +" in"
-        const radiusTag= cakeStandHtml.querySelector('#radius')
-        radiusTag.appendChild(radius)
-        // cakeStandHtml.append(cakeStandHtml)
-        
-        const cakeStandImage = cakeStandHtml.querySelector('#cakeStandImgID')
-        cakeStandImage.src = cakeStand.urlPath;
-        shopItemslist.appendChild(cakeStandHtml.cloneNode(true))
-    });
-   
-    
-}
     // addCakeStands();
-  console.log(cakeStands)
+    // reactDom.render(
+    //   ShopCard,
+    //   document.getElementById('shop-items')
+    // )
+  // console.log(cakeStands)
 export default function ShopCard() {
+  
   return (
       <>
         <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
@@ -101,3 +74,6 @@ export default function ShopCard() {
       </>
   )
 }
+window.addEventListener('DomContentLoaded',(event)=>{
+  console.log("Fully loaded bitch")
+});
