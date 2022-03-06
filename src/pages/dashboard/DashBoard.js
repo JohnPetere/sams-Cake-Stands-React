@@ -1,11 +1,11 @@
 import React from 'react'
-import reactDom from 'react-dom'
+
 // import './styles/global-styles.css'
 //  import { Link } from 'react-router-dom'
 import NavBar from '../../components/navBar/NavBar'
 import DashBar from '../../components/dashBar/DashBar'
 import ShopCard from '../../components/shopCard/ShopCard'
-import { Component } from 'react/cjs/react.development'
+
  export default function DashBoard() {
  
 
@@ -74,8 +74,9 @@ import { Component } from 'react/cjs/react.development'
        
        
       <DashBar/>
+      <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
       <ShopCard/>
-      
+      </div>
     </div>
     
   </>

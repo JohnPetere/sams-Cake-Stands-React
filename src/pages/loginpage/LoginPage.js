@@ -56,13 +56,3 @@ export default function LoginPage() {
   )
 }
 
-
-/**
- *   aeroBlue:'#D7FDF0',
-        cadet: '#556F7A',
-        fieryRose: '#FF5D73',
-        darkPurple: '#4B2142',
-        pinkLavender: '#D4AFCD',
-        isabelline: '#EEE6E6',
-        reallyRed: '#FF0000'
- */

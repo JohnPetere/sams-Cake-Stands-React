@@ -15,19 +15,18 @@
 - Node.js
 - JavaScript
 ## TODO
-- Fake Content
-- Fix fonts not loading
-- viewport not working?
+- 
+- Viewport not changing properly
 ### If TIME
 - Figure how to get fonts to load...
-- Load in content programatically ?
+
 - 
 ## Completed
 - Login Page
 - Nav Bar Module
 - Successful site deployments
 - 404 page
-
+- Loaded in content programatically
 ## Installing Tailwind CSS
 
 ```npm
