@@ -18,6 +18,7 @@
 - Figure how to get fonts to load...
 - Viewport not changing properly
 - Cards are too tall in small and medium views. 
+- Update fake content with actual photos of cake stands
 ## Completed
 - Login Page
 - Nav Bar Module
