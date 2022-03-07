@@ -6,7 +6,7 @@
  - Tailwind Css
 
 ## Website Link:
- - Coming soon!
+ - https://cranky-liskov-177cdb.netlify.app
 
 ## Topics covered
 - React
@@ -28,10 +28,11 @@
 
 ## Installing Tailwind CSS
 
+- Installing 
 ```npm
 npm install -D tailwindcss postcss autoprefixer
 ```
-- Installs tailwind for teh 
+- Create Init file for tailwind
 ```npm
 npx tailwindcss init
 ```
