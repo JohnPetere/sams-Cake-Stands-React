@@ -15,18 +15,17 @@
 - Node.js
 - JavaScript
 ## TODO
-- 
-- Viewport not changing properly
-### If TIME
 - Figure how to get fonts to load...
-
-- 
+- Viewport not changing properly
+- Cards are too tall in small and medium views. 
 ## Completed
 - Login Page
 - Nav Bar Module
 - Successful site deployments
 - 404 page
 - Loaded in content programatically
+- Fonts loaded
+
 ## Installing Tailwind CSS
 
 ```npm
