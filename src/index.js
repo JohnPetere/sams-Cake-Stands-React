@@ -5,6 +5,9 @@ import App from './App';
 import './styles/global-styles.css'
 import "typeface-dancing-script"
 
+import LoginPage from './pages/loginpage/LoginPage';
+import DashBoard from './pages/dashboard/DashBoard';
+import PageNotFound from './pages/404/PageNotFound';
 
 ReactDOM.render(
   <React.StrictMode>
