@@ -17,7 +17,8 @@ module.exports = {
           darkPurple: '#4B2142',
           pinkLavender: '#D4AFCD',
           isabelline: '#EEE6E6',
-          reallyRed: '#FF0000'
+          reallyRed: '#FF0000',
+          backgroundGreg: '#CBD5E1'
         },
         container:{
           center: true,

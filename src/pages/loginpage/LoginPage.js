@@ -19,14 +19,15 @@ export default function LoginPage() {
     <>
 
  
-   <div className="flex justify-center items-center w-full h-screen">
-	<div className="  w-full h-full"><img className='w-full h-full' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg" alt="Supposed to be fancy cakes"></img></div>
-	<form className="item w-full h-full flex flex-col" >
+   <div className="flex justify-center flex-row items-center w-full h-screen bg-backgroundGreg ">
+     <div className=' w-5/6 h-7/8 flex   justify-center align-baseline rounded-3xl  '>
+	<div className="  w-1/2 h-auto shadow-inner "><img className='w-full h-full rounded-l-lg' src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg" alt="Supposed to be fancy cakes"></img></div>
+	<form className="item w-1/2 h-auto flex flex-col rounded-none rounded-r-lg shadow-inner" >
         <h2 className=" text-6xl font-extrabold font-dancingScript
           text-fieryRose mr-6
-         
+          
            hover:text-darkPurple my-10">Sam's cake Stand</h2>
-        <Logo className='w-20 h-20'/>
+        <Logo className='w-16 h-16'/>
         <div className='login-form'>
                     <label className='form-label' for="grid-first-name">
                     Email
@@ -48,9 +49,9 @@ export default function LoginPage() {
        Login 
             
                 </button>      
-                <a href='#forgetPassword' className='text-cadet text-md mt-10'>Forget Password?</a>
+                <a href='#forgetPassword' className='text-cadet text-sm mt-5'>Forget Password?</a>
     </form>
- 
+    </div>
     </div>
    </>
   )
