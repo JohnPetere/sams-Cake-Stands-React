@@ -5,6 +5,7 @@ import React from 'react'
  import {  useNavigate } from 'react-router-dom'
  import "typeface-dancing-script"
 import { ReactComponent as Logo } from '../../styles/svg/branding/cake-logo.svg'
+import {auth} from './../../libs/firebase'
 export default function LoginPage() {
  
     let navigation = useNavigate();
@@ -13,8 +14,9 @@ export default function LoginPage() {
         e.preventDefault();
         console.log("goToDash")
        navigation('dashboard')
+       
     }
-   
+   console.log("LOGIN PAGE", auth)
   return (
     <>
 
