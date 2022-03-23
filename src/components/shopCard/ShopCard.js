@@ -10,27 +10,50 @@ export default function ShopCard() {
         "sku": "sku1",
         "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
         "price":"12.22",
-        "radius":"22"
+        "radius":"22",
+        "description": "No CakeStand only cats here Ya bass tarts"
   
       },
       "awdwad2":{
         "key": "key2",
-        "title":"cakeStand1",
+        "title":"cakeStand Kitty",
         "sku": "sku2",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yVwaBg7hGQy1-GQg5J6v54BFKyocy51zbXYCW7pIyzDwqFz_AbmlLH7friFJS7IgG7w&usqp=CAU",
         "price":"12.33",
-        "radius":"23"
-  
+        "radius":"23",
+        "description": "WHY IS THERE PICTURES CATS"
       },
       "awdwad3":{
         "key": "key3",  
-        "title":"ss",
+        "title":"notCakeStand Kitty",
         "sku": "sku3",
         "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
         "price":"12.77",
-        "radius":"25"
-  
+        "radius":"25",
+        "description": "I LOVE CATS"
+        
     
+    },
+    "awdwas3":{
+      "key": "key3",  
+      "title":"notCakeStand Kitty",
+      "sku": "sku3",
+      "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
+      "price":"12.77",
+      "radius":"25",
+      "description": "I LOVE CATS"
+      
+  
+    },
+    "awdrtad":{
+      "key": "key1",
+      "title":"Cake Stand Cat",
+      "sku": "sku1",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
+      "price":"12.22",
+      "radius":"22",
+      "description": "No CakeStand only cats here Ya bass tarts"
+
     }
    
   }
@@ -48,7 +71,7 @@ export default function ShopCard() {
                   <p id="price" className=" text-cadet text-3xl font-bold   "> ${cakeStand.price}</p>
                   <p id="review" className="text-base text-darkPurple">
               
-                  This is another Filler tag that was not filled
+                  {cakeStand.description}
                   </p>
                   <p id="radius" className="text-base text-cadet">
                     Radius: {cakeStand.radius}

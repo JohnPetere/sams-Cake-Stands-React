@@ -16,8 +16,8 @@
 - JavaScript
 ## TODO
 - Figure how to get fonts to load...
-- Viewport not changing properly
-- Cards are too tall in small and medium views. 
+- Tailwind not changing Viewport not changing properly
+
 - Update fake content with actual photos of cake stands
 ## Completed
 - Login Page
@@ -26,7 +26,8 @@
 - 404 page
 - Loaded in content programatically
 - Fonts loaded
-
+- Fixed working 404 page
+- Cards are too tall in small and medium views. 
 ## Installing Tailwind CSS
 
 - Installing 
