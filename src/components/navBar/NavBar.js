@@ -11,7 +11,7 @@ import {ReactComponent as Settings} from '../../styles/svg/icons/navBar-Icons/se
 import {ReactComponent as Note} from '../../styles/svg/icons/navBar-Icons/note-icon.svg'
 import {ReactComponent as Avatar} from '../../styles/svg/icons/navBar-Icons/avatar-icon.svg'
 import './navBar.components.css'    
-function NavBar() {
+function NavBar(props) {
   
   function showDashBar(){
     const sidebar = document.querySelector(".sidebar");

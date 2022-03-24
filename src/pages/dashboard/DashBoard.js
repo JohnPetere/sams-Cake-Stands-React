@@ -6,6 +6,7 @@ import { auth } from "libs/firebase";
 import NavBar from "../../components/navBar/NavBar";
 import DashBar from "../../components/dashBar/DashBar";
 import ShopCard from "../../components/shopCard/ShopCard";
+
 import "./DashBoard.styles.css";
 export default function DashBoard() {
   let content = (
@@ -25,14 +26,14 @@ export default function DashBoard() {
   onAuthStateChanged(auth, (user) => {
   
     if (user) {
-      console.log("setIsUser is: ", user);
+
       setIsUser(true);
       
     } else {
       content = (<></>);
       setIsUser(false);
       navigator("/");
-      console.log("setIsUser is: ", user);
+     
     }
   });
   // console.log(auth)

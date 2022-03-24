@@ -16,8 +16,8 @@ import {ReactComponent as DemoIcon} from '../../styles/svg/icons/sideBar-icons/d
 import {ReactComponent as CustomerReview} from '../../styles/svg/icons/sideBar-icons/customer-review.svg'
 
 import './dashBar.component.css'
-export default function DashBar() {
-    
+export default function DashBar(props) {
+   
   return (
     <div className="side-bar ">
   
@@ -25,19 +25,19 @@ export default function DashBar() {
             
             <nav>
                 
-                <Link to={'/'} className="side-bar-item">
+                <Link to={'all'} className="side-bar-item">
                     <Inventory className="side-bar-icon "/>
                    View Inventory
                 </Link>
-                <Link to={'/'} className="side-bar-item">
+                <Link to={"add"} className="side-bar-item">
                     <Add className="side-bar-icon "/>
                    Add a Stand
                 </Link>
-                <Link to={'/'} className="side-bar-item">
+                <Link to={"edit"} className="side-bar-item">
                     <Edit className="side-bar-icon "/>
                     Edit Stands
                 </Link>
-                <Link to={'/'} className="side-bar-item">
+                <Link to={'/dashboard'} className="side-bar-item">
                     <Report className="side-bar-icon "/>
                    Sales Reports
                 </Link>
