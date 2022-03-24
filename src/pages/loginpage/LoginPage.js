@@ -6,15 +6,9 @@ import "typeface-dancing-script";
 import { ReactComponent as Logo } from "../../styles/svg/branding/cake-logo.svg";
 
 import { auth } from "./../../libs/firebase";
-import 'LoginPageStyles.css'
+
 
 import { ToastContainer, toast } from 'react-toastify';
-
-// import classNames from "classnames";
-// import toast, { Toaster } from "react-hot-toast";
-// import { MdOutlineClose } from "react-icons/md";
-// import { HiLightningBolt } from "react-icons/hi";
-
 import 'react-toastify/dist/ReactToastify.css';
 export default function LoginPage(props) {
   let navigation = useNavigate();
