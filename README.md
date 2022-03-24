@@ -19,15 +19,16 @@
 ## TODO
 ### Priority
  - Update env variables
- - Add protected Routes to: 
-   - [x] Only access dashboard via login
-   - [x] Redirect if not logged in dashboard
-   - [x] Sign out button signs user out on whole app
-   - [x] Different 404 page if user logged in or out
-   - [ ] Add in Nested Routes (dones't have to work or be filled yet)
-     - [ ] Add Page
-     - [ ] Edit Page
-     - [ ] Default View all page
+  - [ ] Add .env to netlify
+  - [ ] Get get to load on local machine
+
+- [ ] Add in Nested Routes (dones't have to work or be filled yet)
+     - [x] Add Page
+      - [ ] Loads Add Page
+     - [x] Edit Page
+      - [ ] Loads Edit Page
+     - [x] Default View all page
+      - [ ] Loads Edit Page
 ### Later
 - Content is loaded from firebase Database
 - Add Cake stand shop item Functionlity
@@ -45,6 +46,11 @@
 - Even more ITEMS
 
 ## Completed
+ - Add protected Routes to: 
+   - [x] Only access dashboard via login
+   - [x] Redirect if not logged in dashboard
+   - [x] Sign out button signs user out on whole app
+   - [x] Different 404 page if user logged in or out
 - Login Page
 - Nav Bar Module
 - Successful site deployments
