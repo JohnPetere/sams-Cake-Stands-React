@@ -19,9 +19,10 @@
 ## TODO
 ### Priority
  - Add protected Routes to: 
-   - Only access dashboard via login
-   - Different 404 page if user logged in or out
-- Add in tawilwind classes to clean up html
+   - [x] Only access dashboard via login
+   - [x] Different 404 page if user logged in or out
+   - [ ] Add in Nested Routes
+ - Add in tawilwind classes to clean up html
 ### Later
 - Add Cake stand shop item Functionlity
 - Edit cakse stand Functionality
