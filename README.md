@@ -47,10 +47,10 @@
 
 ## Completed
  - Add protected Routes to: 
-   - [x] Only access dashboard via login
-   - [x] Redirect if not logged in dashboard
-   - [x] Sign out button signs user out on whole app
-   - [x] Different 404 page if user logged in or out
+    - [x] Only access dashboard via login
+    - [x] Redirect if not logged in dashboard
+    - [x] Sign out button signs user out on whole app
+    - [x] Different 404 page if user logged in or out
 - Login Page
 - Nav Bar Module
 - Successful site deployments
