@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import "./LoginPage.styles.css";
 export default function LoginPage(props) {
-  let navigation = useNavigate();
+  let navigator = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,11 +18,16 @@ export default function LoginPage(props) {
     e.preventDefault();
     console.log("email," + email);
     console.log("passsword, " + password);
-
+ 
 
     signInWithEmailAndPassword(auth, email, password)
       .then((UserCrediential) => {
-        console.log(UserCrediential);
+        
+
+        toast.success("Logged in Successs!", {
+          position: toast.POSITION.TOP_CENTER,
+        });
+        navigator('./dashboard')
       })
       .catch((error) => {
         if (
@@ -64,8 +69,8 @@ export default function LoginPage(props) {
 
   return (
     <>
-      <ToastContainer />
       <div className="flex justify-center flex-row items-center w-full h-screen bg-backgroundGreg ">
+      <ToastContainer />
         <div className=" w-5/6 h-7/8 flex   justify-center align-baseline rounded-3xl  ">
           <div className="  w-1/2 h-auto shadow-inner ">
             <img

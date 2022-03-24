@@ -1,38 +1,44 @@
-import React from 'react'
 
-// import './styles/global-styles.css'
-//  import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
+
+import { onAuthStateChanged } from 'firebase/auth'
+import {auth} from 'libs/firebase'
 import NavBar from '../../components/navBar/NavBar'
 import DashBar from '../../components/dashBar/DashBar'
 import ShopCard from '../../components/shopCard/ShopCard'
 
  export default function DashBoard() {
  
-
-  // btn.addEventListener("click", () => {
-  //   sidebar.classList.toggle("-translate-x-full");
-  // });
-  // reactDom.render(
-  //   <ShopCard/>,
-  //   document.getElementById('shop-item')
-  // )
-
-  /**
-   * The Problem before I go to work: 
-   * This class component can be rendered in like such bellow, using these resources
-   * https://reactjs.org/docs/state-and-lifecycle.html 
-   * 
-   * I want to programtically load in cards to the "shop-items", such laid out in addCakeStands(), However, the method bellow adds features in lifecycles, 
-   * outlined in the clock.
-   * 
-   * REact has a compennetlifecycle, and can detect if a component 'mounted' via componentDidMount()
-   * 
-   * IDEA: 
-   * 
-   * 1)  we need to use the componentDidMount(), which will check if the content rendered, and we will be able to populate shop cards
-   * 2) componentWillUnmount() I'm not sure if I need this method as we are loading in somewhat static contnet.
-   *  however, it would be useful in building a timer or scheduled asyncrhnouse events
-   */
+  const [isUser, setIsUser]= useState(false)
+  const navigator = useNavigate();
+  onAuthStateChanged(auth, (user) => {
+   
+    if (user) {
+        setIsUser(true)
+ 
+    } else {
+        // error shouldn't get access return to the login page
+        setIsUser(false)
+        navigator('/')
+    }
+  });
+  return (
+      <>
+    
+      <NavBar/>
+      <div className="relative min-h-screen md:flex">
+       
+       
+      <DashBar/>
+      <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
+      <ShopCard/>
+      </div>
+    </div>
+    
+  </>
+  )
+}
   // class ShopCard extends React.Component{
   //   render(){
   //     return <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
@@ -65,20 +71,3 @@ import ShopCard from '../../components/shopCard/ShopCard'
   // </div>
   //   }
   // }
- 
-  return (
-      <>
-    
-      <NavBar/>
-      <div className="relative min-h-screen md:flex">
-       
-       
-      <DashBar/>
-      <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
-      <ShopCard/>
-      </div>
-    </div>
-    
-  </>
-  )
-}

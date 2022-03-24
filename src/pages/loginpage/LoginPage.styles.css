@@ -19,14 +19,14 @@
     --toastify-font-family: sans-serif;
     --toastify-z-index: 9999;
   
-    --toastify-text-color-light: #ff2d55;
+    --toastify-text-color-light: #4B2142;
     --toastify-text-color-dark: #ff2d55;
   
     /* //Used only for colored theme */
-    --toastify-text-color-info: #ff2d55;
-    --toastify-text-color-success: #ff2d55;
-    --toastify-text-color-warning: #ff2d55;
-    --toastify-text-color-error: #ff2d55;
+    --toastify-text-color-info: #4B2142;
+    --toastify-text-color-success: #4B2142;
+    --toastify-text-color-warning: #4B2142;
+    --toastify-text-color-error: #4B2142;
   
     --toastify-spinner-color: #ff2d55;
     --toastify-spinner-color-empty-area: #ff2d55;
