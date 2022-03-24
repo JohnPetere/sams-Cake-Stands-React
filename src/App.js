@@ -19,7 +19,10 @@ function App() {
       
         
           <Route index element={<LoginPage/>}/>
-          <Route Route path="dashboard" element={<DashBoard/>}/>
+          <Route path="dashboard" element={<DashBoard/>}>
+            {/* <Route index/>
+            <Route /> */}
+          </Route>
           <Route path="*" element={<PageNotFound/>}/>
   
       </Routes>

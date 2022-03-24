@@ -10,9 +10,9 @@ export default function PageNotFound() {
      
      onAuthStateChanged(auth, (user)=>{
          if(user){
-             setIsUser(true)
-         }else{
              setIsUser(false)
+         }else{
+             setIsUser(true)
          }
      })
   return (
@@ -22,9 +22,9 @@ export default function PageNotFound() {
         <h1 className=' font-extrabold text-8xl text-darkPurple font-dancingScript'> 404</h1>
         <Logo className='w-20 h-20 m-auto my-6' />
         {
-
-         isUser?  <p className='text-cadet'>Page not found... <Link className='underline' to='/dashboard'>Back to Dashboard?</Link></p>
-         :     <p className='text-cadet'>Page not found... <Link className='underline' to='/'>Click here to login</Link></p>      
+        
+         isUser?    <p className='text-cadet'>Page not found... <Link className='underline' to='/'>Click here to login</Link></p>   
+         :        <p className='text-cadet'>Page not found... <Link className='underline' to='/dashboard'>Back to Dashboard?</Link></p>
        
         }
         </div>

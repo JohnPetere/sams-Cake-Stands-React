@@ -19,7 +19,8 @@ function NavBar() {
     sidebar.classList.toggle("-translate-x-full");
 
     }
-    function onLogOutRequest(e){
+    function onLogOutRequest(event){
+      console.log("LOGOIUT")
       signOut(auth)
  //   signOut(auth).then(() => {
  //       // Sign-out successful.

@@ -7,7 +7,7 @@ import {ReactComponent as CustomerProfile} from '../../styles/svg/icons/sideBar-
 import {ReactComponent as EmployeeProfile} from '../../styles/svg/icons/sideBar-icons/employee-icon.svg'
 import {ReactComponent as Supply} from '../../styles/svg/icons/sideBar-icons/supply-icon.svg'
 import {ReactComponent as Orders} from '../../styles/svg/icons/sideBar-icons/order-icon.svg'
-import {ReactComponent as Review} from '../../styles/svg/icons/sideBar-icons/review-icon.svg'
+import {ReactComponent as Edit} from '../../styles/svg/icons/sideBar-icons/review-icon.svg'
 // import {ReactComponent as Review} from '../../styles/svg/icons/sideBar-icons/review-icon.svg'
 // import {ReactComponent as Brand} from '../../styles/svg/icons/sideBar-icons/brand-icon.svg'
 import {ReactComponent as Brand} from '../../styles/svg/icons/sideBar-icons/brand-icon.svg'
@@ -34,6 +34,10 @@ export default function DashBar() {
                    Add a Stand
                 </Link>
                 <Link to={'/'} className="side-bar-item">
+                    <Edit className="side-bar-icon "/>
+                    Edit Stands
+                </Link>
+                <Link to={'/'} className="side-bar-item">
                     <Report className="side-bar-icon "/>
                    Sales Reports
                 </Link>
@@ -53,10 +57,7 @@ export default function DashBar() {
                     <Orders className="side-bar-icon "/>
                     Orders
                 </Link>
-                <Link to={'/'} className="side-bar-item">
-                    <Review className="side-bar-icon "/>
-                    Reviews
-                </Link>
+                
                 <Link to={'/'} className="side-bar-item">
                     <Brand className="side-bar-icon "/>
                     Brands
