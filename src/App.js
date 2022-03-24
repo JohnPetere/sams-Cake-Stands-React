@@ -1,6 +1,6 @@
 // import Button from './components/button/Button'
 import React from 'react'
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 
 // import {LoginPage, DashBoardPage, PageNotFound} from './pages'

@@ -7,7 +7,7 @@ import {auth} from 'libs/firebase'
 import NavBar from '../../components/navBar/NavBar'
 import DashBar from '../../components/dashBar/DashBar'
 import ShopCard from '../../components/shopCard/ShopCard'
-
+import './DashBoard.styles.css'
  export default function DashBoard() {
  
   const [isUser, setIsUser]= useState(false)
@@ -18,7 +18,7 @@ import ShopCard from '../../components/shopCard/ShopCard'
         setIsUser(true)
  
     } else {
-        // error shouldn't get access return to the login page
+   
         setIsUser(false)
         navigator('/')
     }
@@ -31,7 +31,7 @@ import ShopCard from '../../components/shopCard/ShopCard'
        
        
       <DashBar/>
-      <div id="shop-items" className="flex flex-wrap -mx-2 overflow-hidden sm:-mx-3 md:-mx-3 lg:-mx-2 xl:-mx-1 w-full">
+      <div id="shop-items" >
       <ShopCard/>
       </div>
     </div>

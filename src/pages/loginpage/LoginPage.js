@@ -73,6 +73,7 @@ export default function LoginPage(props) {
       <ToastContainer />
         <div className=" w-5/6 h-7/8 flex   justify-center align-baseline rounded-3xl  ">
           <div className="  w-1/2 h-auto shadow-inner ">
+       
             <img
               className="w-full h-full rounded-l-lg"
               src="https://cdn.pixabay.com/photo/2021/05/18/07/56/cakes-6262577_960_720.jpg"

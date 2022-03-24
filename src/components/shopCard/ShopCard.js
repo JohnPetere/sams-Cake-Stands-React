@@ -77,7 +77,7 @@ export default function ShopCard() {
                     Radius: {cakeStand.radius}
                   </p>
                   <button id="buy-button" className="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
-                  Buy
+                  Buy 
                   </button>
               </div>
               <div className="inline-flex my-2 mx-0" >

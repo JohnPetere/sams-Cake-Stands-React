@@ -1,7 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {ReactComponent as Logo} from '../../styles/svg/branding/cake-logo.svg'
 
+import { signOut } from 'firebase/auth';
+import {auth} from 'libs/firebase';
+
+import {ReactComponent as Logo} from '../../styles/svg/branding/cake-logo.svg'
 import {ReactComponent as Logout} from '../../styles/svg/icons/navBar-Icons/logout-icon.svg'
 import {ReactComponent as Email} from '../../styles/svg/icons/navBar-Icons/email-icon.svg'
 import {ReactComponent as Settings} from '../../styles/svg/icons/navBar-Icons/settings-icon.svg'
@@ -16,6 +19,15 @@ function NavBar() {
     sidebar.classList.toggle("-translate-x-full");
 
     }
+    function onLogOutRequest(e){
+      signOut(auth)
+ //   signOut(auth).then(() => {
+ //       // Sign-out successful.
+        
+ //     }).catch((error) => {
+ //       // An error happened.
+ //     });
+}
   return (
     <>
      <header className="flex-col">
@@ -24,7 +36,7 @@ function NavBar() {
          <Logo className=" object-contain  h-10 w-10 mx-3" alt="LOGO"/>
      
   
-          <Link  to='/' className="font-dancingScript font-extrabold text-3xl  ">Sams Cake Stand</Link>
+          <Link  to='/dashboard' className="font-dancingScript font-extrabold text-3xl  ">Sams Cake Stand</Link>
          
         </div>
         <div className=" bg-aeroBlue flex justify-between md:hidden">
@@ -36,7 +48,7 @@ function NavBar() {
           </button>
         </div>
       <div className=''>
-         <Link to='/' className='font-bold'>Sign Out <Logout className="object-contain inline h-5 w-5 mx-3"/></Link>
+         <button onClick={onLogOutRequest} className='font-bold'>Sign Out <Logout className="object-contain inline h-5 w-5 mx-3"/></button>
          <Link to='/dashboard' className='font-bold'> <Email className="object-contain inline h-7 w-7 mx-3"/></Link>
          <Link to='/dashboard' className='font-bold'> <Settings className="object-contain inline h-7 w-7 mx-3"/></Link>
          <Link to='/dashboard' className='font-bold'> <Note className="object-contain inline h-8 w-8 mx-3"/></Link>

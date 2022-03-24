@@ -19,7 +19,7 @@ import './dashBar.component.css'
 export default function DashBar() {
     
   return (
-    <div className="sidebar text-cadet bg-isabelline w-80 space-y-6 py-7 px-2 absolute mr-3 inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <div className="side-bar ">
   
   
             
@@ -27,7 +27,7 @@ export default function DashBar() {
                 
                 <Link to={'/'} className="side-bar-item">
                     <Inventory className="side-bar-icon "/>
-                    Inventory
+                   View Inventory
                 </Link>
                 <Link to={'/'} className="side-bar-item">
                     <Add className="side-bar-icon "/>
