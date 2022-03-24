@@ -18,6 +18,7 @@
 - React protected Routes
 ## TODO
 ### Priority
+ - Update env variables
  - Add protected Routes to: 
    - [x] Only access dashboard via login
    - [x] Redirect if not logged in dashboard
@@ -28,6 +29,7 @@
      - [ ] Edit Page
      - [ ] Default View all page
 ### Later
+- Content is loaded from firebase Database
 - Add Cake stand shop item Functionlity
 - Edit cakse stand Functionality
 - Delete cake stand functionality
