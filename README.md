@@ -1,5 +1,5 @@
 # Login Page 
-> A simulated login page styled with tailwind, and function with react.
+> A simulated login page styled with tailwind, slowly addi
 > Almost complete? 
 ## Built with 
  - React
@@ -14,11 +14,27 @@
 - React Router
 - Node.js
 - JavaScript
+- Firebase Authentication
+- React protected Routes
 ## TODO
-- Figure how to get fonts to load...
-- Tailwind not changing Viewport not changing properly
+### Priority
+ - Add protected Routes to: 
+   - Only access dashboard via login
+   - Different 404 page if user logged in or out
+- Add in tawilwind classes to clean up html
+### Later
+- Add Cake stand shop item Functionlity
+- Edit cakse stand Functionality
+- Delete cake stand functionality
 
-- Update fake content with actual photos of cake stands
+## To Do if time
+- Choose a different background color for login screen
+  - Change Shop Item cards to be more square
+   - Images cropped to same size
+- Fix mobile menu
+- Use Purge CSS for faster website 
+- Even more 
+
 ## Completed
 - Login Page
 - Nav Bar Module
@@ -28,6 +44,7 @@
 - Fonts loaded
 - Fixed working 404 page
 - Cards are too tall in small and medium views. 
+- Authenticaiton Error Handling
 ## Installing Tailwind CSS
 
 - Installing 
@@ -38,3 +55,6 @@ npm install -D tailwindcss postcss autoprefixer
 ```npm
 npx tailwindcss init
 ```
+### documentation/ references
+- [Toastify](https://fkhadra.github.io/react-toastify/positioning-toast)
+- 
