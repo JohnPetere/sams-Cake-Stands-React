@@ -10,7 +10,7 @@ import ShopCard from '../../components/shopCard/ShopCard'
 import './DashBoard.styles.css'
  export default function DashBoard() {
  
-  const [isUser, setIsUser]= useState(false)
+  const [ setIsUser]= useState(false)
   const navigator = useNavigate();
   onAuthStateChanged(auth, (user) => {
    
@@ -27,7 +27,7 @@ import './DashBoard.styles.css'
       <>
     
       <NavBar/>
-      <div className="relative min-h-screen md:flex">
+      <div className="col-seperator">
        
        
       <DashBar/>
