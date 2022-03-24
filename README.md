@@ -1,5 +1,5 @@
 # Login Page 
-> A simulated login page styled with tailwind, slowly addi
+> A simulated E-commerce website for Cake Stands
 > Almost complete? 
 ## Built with 
  - React
