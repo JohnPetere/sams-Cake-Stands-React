@@ -25,7 +25,7 @@ export default function DashBar(props) {
             
             <nav>
                 
-                <Link to={'all'} className="side-bar-item">
+                <Link to={'/dashboard/all'} className="side-bar-item">
                     <Inventory className="side-bar-icon "/>
                    View Inventory
                 </Link>

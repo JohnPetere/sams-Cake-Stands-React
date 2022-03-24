@@ -22,7 +22,7 @@ function App() {
       
         
           <Route index element={<LoginPage/>}/>
-          <Route Route path='dashboard' element={<DashBoard/>}>
+          <Route Route path='dashboard/' element={<DashBoard/>}>
            
             <Route index path='all' element={<AllProducts title="All Cake Stands"/>}/>
             <Route path='edit' element={<EditProducts title="Edit A cake Stand"/>}/>
