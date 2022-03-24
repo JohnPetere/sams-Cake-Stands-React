@@ -1,0 +1,58 @@
+:root {
+    --toastify-color-light: #D7FDF0;
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: #07bc0c;
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: #e74c3c;
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+  
+    --toastify-toast-width: 320px;
+    --toastify-toast-background: #EEE6E6;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+  
+    --toastify-text-color-light: #ff2d55;
+    --toastify-text-color-dark: #ff2d55;
+  
+    /* //Used only for colored theme */
+    --toastify-text-color-info: #ff2d55;
+    --toastify-text-color-success: #ff2d55;
+    --toastify-text-color-warning: #ff2d55;
+    --toastify-text-color-error: #ff2d55;
+  
+    --toastify-spinner-color: #ff2d55;
+    --toastify-spinner-color-empty-area: #ff2d55;
+  
+    /* // Used when no type is provided */
+    /* // toast("**hello**") */
+    --toastify-color-progress-light: linear-gradient(
+      to right,
+      #4cd964,
+      #5ac8fa,
+      #007aff,
+      #34aadc,
+      #5856d6,
+      #ff2d55
+    );
+    /* // Used when no type is provided */
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+  }
+  /*   aeroBlue:'#D7FDF0',
+        cadet: '#556F7A',
+        fieryRose: '#FF5D73',
+        darkPurple: '#4B2142',
+        pinkLavender: '#D4AFCD',
+        isabelline: '#EEE6E6',
+        reallyRed: '#FF0000' */

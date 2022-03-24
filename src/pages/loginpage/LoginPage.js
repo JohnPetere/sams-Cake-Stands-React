@@ -1,25 +1,16 @@
-// import React from 'react'
 import React, { useState } from "react";
-import { signInWithEmailAndPassword} from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "typeface-dancing-script";
 import { ReactComponent as Logo } from "../../styles/svg/branding/cake-logo.svg";
 
 import { auth } from "./../../libs/firebase";
 
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import "./LoginPage.styles.css";
 export default function LoginPage(props) {
   let navigation = useNavigate();
-
-  function goToDash(e) {
-    e.preventDefault();
-    console.log("goToDash");
-    navigation("dashboard");
-    e.preventDefault();
-    console.log(1);
-  }
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,28 +19,53 @@ export default function LoginPage(props) {
     console.log("email," + email);
     console.log("passsword, " + password);
 
-    const notify = (error) => toast.error(error.code,{
-      position: "top-center",
-      autoClose : 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      progress: undefined,
-    });
+
     signInWithEmailAndPassword(auth, email, password)
-    .then(UserCrediential=>{
-      console.log(UserCrediential)
-    }).catch(error=>{
-      
-      console.log(error)
-      notify(error)
-    })
+      .then((UserCrediential) => {
+        console.log(UserCrediential);
+      })
+      .catch((error) => {
+        if (
+          error.toString() ===
+          "FirebaseError: Firebase: Error (auth/invalid-email)."
+        )
+          toast.error("Your email is invalid", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+         else if (
+          error.toString() ===
+          "FirebaseError: Firebase: Error (auth/wrong-password)."
+        ) {
+          toast.error("Your Password is invalid", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        }
+       else if (
+          error.toString() ===
+          "FirebaseError: Firebase: Access to this account has been temporarily disabled due to"+
+          " many failed login attempts. You can immediately restore it by resetting your password or"+
+          " you can try again later. (auth/too-many-requests)."
+        ) {
+          toast.error(
+            "Account has been LOCKED, please contact server administraitor",
+            {
+              position: toast.POSITION.TOP_CENTER,
+            }
+          );
+        } else {
+          console.log(error);
+          toast.error("Something Else didn't go write, see console log", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        }
+
+      });
   };
 
   return (
     <>
+      <ToastContainer />
       <div className="flex justify-center flex-row items-center w-full h-screen bg-backgroundGreg ">
-        <ToastContainer/>
         <div className=" w-5/6 h-7/8 flex   justify-center align-baseline rounded-3xl  ">
           <div className="  w-1/2 h-auto shadow-inner ">
             <img
