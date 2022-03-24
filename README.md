@@ -23,20 +23,24 @@
    - [x] Redirect if not logged in dashboard
    - [x] Sign out button signs user out on whole app
    - [x] Different 404 page if user logged in or out
-   - [ ] Add in Nested Routes
- - Add in tawilwind classes to clean up html
+   - [ ] Add in Nested Routes (dones't have to work or be filled yet)
+     - [ ] Add Page
+     - [ ] Edit Page
+     - [ ] Default View all page
 ### Later
 - Add Cake stand shop item Functionlity
 - Edit cakse stand Functionality
 - Delete cake stand functionality
 
 ## To Do if time
+ - Add in tawilwind classes to clean up html
 - Choose a different background color for login screen
   - Change Shop Item cards to be more square
    - Images cropped to same size
 - Fix mobile menu
+  - Icons still visible when viewing mobile viewport
 - Use Purge CSS for faster website 
-- Even more 
+- Even more ITEMS
 
 ## Completed
 - Login Page
