@@ -24,11 +24,11 @@
 
 - [ ] Add in Nested Routes (dones't have to work or be filled yet)
      - [x] Add Page
-      - [ ] Loads Add Page
+     - [ ] Loads Add Page
      - [x] Edit Page
-      - [ ] Loads Edit Page
+     - [ ] Loads Edit Page
      - [x] Default View all page
-      - [ ] Loads Edit Page
+     - [ ] Loads Edit Page
 ### Later
 - Content is loaded from firebase Database
 - Add Cake stand shop item Functionlity
@@ -36,7 +36,7 @@
 - Delete cake stand functionality
 
 ## To Do if time
- - Add in tawilwind classes to clean up html
+- Add in tawilwind classes to clean up html
 - Choose a different background color for login screen
   - Change Shop Item cards to be more square
    - Images cropped to same size
