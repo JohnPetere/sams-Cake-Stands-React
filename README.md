@@ -18,9 +18,6 @@
 - React protected Routes
 ## TODO
 ### Priority
- - Update env variables
-  - [ ] Add .env to netlify
-  - [ ] Get get to load on local machine
 
 - [ ] Add in Nested Routes (dones't have to work or be filled yet)
      - [x] Add Page
@@ -30,10 +27,10 @@
      - [x] Default View all page
      - [ ] Loads Edit Page
 ### Later
-- Content is loaded from firebase Database
-- Add Cake stand shop item Functionlity
-- Edit cakse stand Functionality
-- Delete cake stand functionality
+- [ ] Content is loaded from firebase Database
+- [ ] Add Cake stand shop item Functionlity
+- [ ] Edit cakse stand Functionality
+- [ ] Delete cake stand functionality
 
 ## To Do if time
 - Add in tawilwind classes to clean up html
@@ -51,15 +48,19 @@
     - [x] Redirect if not logged in dashboard
     - [x] Sign out button signs user out on whole app
     - [x] Different 404 page if user logged in or out
-- Login Page
-- Nav Bar Module
-- Successful site deployments
-- 404 page
-- Loaded in content programatically
-- Fonts loaded
-- Fixed working 404 page
-- Cards are too tall in small and medium views. 
-- Authenticaiton Error Handling
+- [x] Login Page
+- [x] Nav Bar Module
+- [x] Successful site deployments
+- [x] 404 page
+- [x] Loaded in content programatically
+- [x] Fonts loaded
+- [x] Fixed working 404 page
+- [x] Cards are too tall in small and medium views. 
+- [x]Authenticaiton Error Handling
+ - [x] Update env variables
+  - [x] Add .env to netlify
+  - [x] Get get to load on local machine
+
 ## Installing Tailwind CSS
 
 - Installing 
