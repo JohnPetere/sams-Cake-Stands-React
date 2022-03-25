@@ -16,21 +16,21 @@ import {getAuth} from "firebase/auth"
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyAr8wQWtPnPFb1FUSLZB0xsrhGB6macSpg",
+  apiKey: process.env.REACT_APP_API_KEY,
 
-  authDomain: "store-front-a5e2e.firebaseapp.com",
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
 
-  databaseURL: "https://store-front-a5e2e-default-rtdb.firebaseio.com",
+  databaseURL:process.env.REACT_APP_DATABASE_URL ,
 
-  projectId: "store-front-a5e2e",
+  projectId: process.env.REACT_APP_PROJECT_ID,
 
-  storageBucket: "store-front-a5e2e.appspot.com",
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
 
-  messagingSenderId: "986885668446",
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
 
-  appId: "1:986885668446:web:76f3e3e313f58a33c93ecf",
+  appId: process.env.REACT_APP_APP_ID,
 
-  measurementId: "G-Q5XP28ZLS8"
+  measurementId: process.env.REACT_APP_APP_ID
 
 };
 
