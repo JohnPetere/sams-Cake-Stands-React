@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Outlet } from "react-router-dom";
 
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "libs/firebase";
@@ -16,8 +16,9 @@ export default function DashBoard() {
       <div className="col-seperator">
         <DashBar />
         <div id="shop-items">
-          <ShopCard />
+        <Outlet/>
         </div>
+        
       </div>
     </>
   );
