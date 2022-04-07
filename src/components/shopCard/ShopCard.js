@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import './ShopCard.styles.css'
 export default function ShopCard() {
   const cakeStands = {
    
@@ -52,7 +52,7 @@ export default function ShopCard() {
       "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
       "price":"12.22",
       "radius":"22",
-      "description": "No CakeStand only cats here Ya bass tarts"
+      "description": "No CakeStand only cats here Ya bass tarts "
 
     }
    
@@ -64,12 +64,12 @@ export default function ShopCard() {
 
         const element = (
           <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img id="cakeStandImgID" className="w-full h-72 object-contain aspect-square" src={cakeStand.image} alt={cakeStand.key}/>
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
+              <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src={cakeStand.image} alt={cakeStand.key}/>
               <div className="px-6 py-4">
                   <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">{cakeStand.title}</div>
                   <p id="price" className=" text-cadet text-3xl font-bold   "> ${cakeStand.price}</p>
-                  <p id="review" className="text-base text-darkPurple">
+                  <p id="review" className="text-base text-darkPurple overflow-hidden h-10 hover:overflow-visible">
               
                   {cakeStand.description}
                   </p>
@@ -81,10 +81,10 @@ export default function ShopCard() {
                   </button>
               </div>
               <div className="inline-flex my-2 mx-0" >
-                  <button id="edit-button" className="bg-white hover:bg-gray-100  text-cadet font-bold py-2 px-4 rounded-l">
+                  <button id="edit-button" className="bg-isabelline hover:bg-gray-100  text-cadet font-bold py-2 px-4 rounded-l">
                   Edit
                   </button>
-                  <button id="delete-button" function="deleteThis" className="delete-button bg-white hover:bg-gray-100 text-fieryRose font-bold py-2 px-4 rounded-r">
+                  <button id="delete-button" function="deleteThis" className="delete-button bg-isabelline hover:bg-gray-100 text-fieryRose font-bold py-2 px-4 rounded-r">
                   Delete
                   </button>
               </div>
@@ -94,8 +94,9 @@ export default function ShopCard() {
         );
           return element;
       });
-     
-  return renderedItems
+ 
+ return renderedItems
+
 }
 /**
  * 

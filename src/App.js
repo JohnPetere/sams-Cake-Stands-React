@@ -8,9 +8,9 @@ import LoginPage from './pages/loginpage/LoginPage';
 import DashBoard from './pages/dashboard/DashBoard';
 import PageNotFound from './pages/404/PageNotFound';
 
-import AllProducts from 'pages/dashboard/dashboard-views/AllProducts';
-import EditProducts from 'pages/dashboard/dashboard-views/EditProducts';
-import AddProduct from 'pages/dashboard/dashboard-views/AddProduct';
+import AllProducts from 'pages/dashboard/dashboard-views/AllProducts/AllProducts.js';
+import EditProducts from 'pages/dashboard/dashboard-views/EditProduct/EditProducts.js';
+import AddProduct from 'pages/dashboard/dashboard-views/AddProduct/AddProduct.js';
 
 // import './styles/global-styles.css'
 function App() {

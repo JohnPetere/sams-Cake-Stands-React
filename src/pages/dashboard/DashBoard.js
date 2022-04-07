@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "libs/firebase";
 import NavBar from "../../components/navBar/NavBar";
 import DashBar from "../../components/dashBar/DashBar";
-import ShopCard from "../../components/shopCard/ShopCard";
+// import ShopCard from "../../components/shopCard/ShopCard";
 
 import "./DashBoard.styles.css";
 export default function DashBoard() {
@@ -15,9 +15,9 @@ export default function DashBoard() {
       <NavBar />
       <div className="col-seperator">
         <DashBar />
-        <div id="shop-items">
-        <Outlet/>
-        </div>
+        
+        <Outlet />
+     
         
       </div>
     </>
