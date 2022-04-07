@@ -36,10 +36,9 @@
 
 
 ### Later
-
-- [ ] Add Cake stand shop item Functionlity
-- [ ] Edit cakse stand Functionality
 - [ ] Delete cake stand functionality
+- [ ] Payment incorporation
+- [ ] 
 
 ## To Do if time
 - Add in tawilwind classes to clean up html
