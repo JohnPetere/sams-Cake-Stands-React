@@ -18,16 +18,25 @@
 - React protected Routes
 ## TODO
 ### Priority
-
-- [ ] Add in Nested Routes (dones't have to work or be filled yet)
-     - [x] Add Page
-     - [ ] Loads Add Page
-     - [x] Edit Page
-     - [ ] Loads Edit Page
-     - [x] Default View all page
-     - [ ] Loads Edit Page
-### Later
 - [ ] Content is loaded from firebase Database
+  - [ ] Conditional rendering, while waiting for rendering from real time databse
+- [ ] Add Functionality
+  - [ ] Rendered shop-item-card is loaded to show what it what load like when added
+  - [ ] uploaded to database message / UI component
+  - [ ] succcesfully added to database / UI component
+  - [ ] Let user add more shop-item button, or view all 
+- [ ] Update Functionality
+  - [ ] Rendered shop-item-card is loaded to show what it what load like when added
+  - [ ] uploaded to database message / UI component
+  - [ ] succcesfully added to database / UI component
+  - [ ] Let user add more shop-item button, or view all 
+
+
+
+
+
+### Later
+
 - [ ] Add Cake stand shop item Functionlity
 - [ ] Edit cakse stand Functionality
 - [ ] Delete cake stand functionality
@@ -43,6 +52,13 @@
 - Even more ITEMS
 
 ## Completed
+- [ x] Add in Nested Routes (dones't have to work or be filled yet)
+     - [x] Add Page
+     - [x ] Loads Add Page
+     - [x] Edit Page
+     - [x ] Loads Edit Page
+     - [x] Default View all page
+     - [x ] Loads Edit Page
  - Add protected Routes to: 
     - [x] Only access dashboard via login
     - [x] Redirect if not logged in dashboard
