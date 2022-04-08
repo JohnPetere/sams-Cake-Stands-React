@@ -88,4 +88,4 @@ npx tailwindcss init
 ```
 ### documentation/ references
 - [Toastify](https://fkhadra.github.io/react-toastify/positioning-toast)
-- 
+- [Fixing web pack issue] (https://stackoverflow.com/questions/69665222/node-js-17-0-1-gatsby-error-digital-envelope-routinesunsupported-err-os)
