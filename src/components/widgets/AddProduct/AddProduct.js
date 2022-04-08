@@ -1,10 +1,11 @@
 // import { ShopEditor } from 'components/ShopEditor';
+import ShopEditor from 'components/ShopEditor/ShopEditor';
 import React, {useState} from 'react';
 
 // import Styles from './styles.module.css'
 // import { ShopEditor } from 'components/ShopEditor';
 // import ShopEditor from 'components/ShopEditor/ShopEditor';
-import {ShopEditor} from 'components/ShopEditor'
+
 function AddProduct ({children, ...props})  {
   const [productName, setProductName] = useState('Product Name')
 
