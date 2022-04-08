@@ -1,3 +1,4 @@
+import ShopCardLoader from 'components/shopCardLoader/ShopCardLoader';
 import ShopEditorEntryForm from 'components/shopEditorEntryForm/ShopEditorEntryForm';
 import React from 'react';
 
@@ -8,6 +9,7 @@ function ProductEditor ({children, ...props})  {
         <div className={Styles.producteditor}>
            
            <ShopEditorEntryForm/>
+          <ShopCardLoader/>
         </div>
   )
 }
