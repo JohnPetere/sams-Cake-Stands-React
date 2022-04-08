@@ -1,5 +1,5 @@
 // import { ShopEditor } from 'components/ShopEditor';
-import ShopEditor from 'components/ShopEditor/ShopEditor';
+import ShopEditor from '../../ShopEditor/ShopEditor';
 import React, {useState} from 'react';
 
 // import Styles from './styles.module.css'
