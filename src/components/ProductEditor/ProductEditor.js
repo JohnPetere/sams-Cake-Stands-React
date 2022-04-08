@@ -1,15 +1,16 @@
 import ShopCardLoader from 'components/shopCardLoader/ShopCardLoader';
 import ShopEditorEntryForm from 'components/shopEditorEntryForm/ShopEditorEntryForm';
-import React from 'react';
+// import React, {useState} from 'react';
 
 // import Styles from './styles.module.css'
 
-function ProductEditor ({children, ...props})  {
+function ProductEditor ({children, productName, handleProductName, ...props})  {
+  
   return (
         <div id="shop-item" className="flex">
            
-           <ShopEditorEntryForm/>
-          <ShopCardLoader/>
+           <ShopEditorEntryForm handleProductName={handleProductName}/>
+          <ShopCardLoader productName={productName}/>
         </div>
   )
 }
