@@ -1,0 +1,1 @@
+export {ShopEditor  as default} from './ShopEditor'
