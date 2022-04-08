@@ -5,8 +5,8 @@ import ShopCardLoader from 'components/shopCardLoader/ShopCardLoader';
 import './styles.module.css'
 
 function ShopEditor ({children,productName,handleProductName, ...props})  {
-    console.log(productName)
-    console.log("handleProductName", handleProductName)
+    // console.log(productName)
+    // console.log("handleProductName", handleProductName)
   return (
         <div className="flex" {...props}>
          
