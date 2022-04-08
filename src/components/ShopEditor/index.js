@@ -1,1 +1,1 @@
-export {default as ShopEditor} from './ShopEditor'
+export {default as ShopEditor} from './ShopEditor.js'

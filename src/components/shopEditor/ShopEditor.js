@@ -2,7 +2,6 @@ import React from 'react';
 
 import ShopEditorEntryForm from 'components/shopEditorEntryForm/ShopEditorEntryForm';
 import ShopCardLoader from 'components/shopCardLoader/ShopCardLoader';
-import './styles.module.css'
 
 function ShopEditor ({children,productName,handleProductName, ...props})  {
     // console.log(productName)
