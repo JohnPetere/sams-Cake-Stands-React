@@ -1,6 +1,8 @@
 // import { ShopEditor } from 'components/ShopEditor';
 // import ShopEditor from '../../../components/ShopEditor/ShopEditor';
-import ShopCard from 'components/shopCard/ShopCard';
+
+
+import ShopEditor from 'components/ShopEditor/ShopEditor';
 import React,{useState} from 'react';
 
 // import Styles from './styles.module.css'
@@ -16,7 +18,7 @@ function AddProduct ({children, ...props})  {
   return (
         <div  className="w-screen">
      
-          <ShopCard productName={productName} handleProductName={handleProductName}/>
+          <ShopEditor productName={productName} handleProductName={handleProductName}/>
           
         </div>
   )
