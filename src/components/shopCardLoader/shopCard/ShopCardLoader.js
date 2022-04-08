@@ -1,8 +1,8 @@
 
 import React from 'react'
 import './ShopCardLoader.styles.css'
-import ShopCard from 'components/shopCard/ShopCard';
-export default function ShopCardLoader(props) {
+
+export default function ShopCardLoader({children, productName, ...props}) {
 
         const element = (
           <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3">

@@ -8,10 +8,11 @@ import LoginPage from './pages/loginpage/LoginPage';
 import DashBoard from './pages/dashboard/DashBoard';
 import PageNotFound from './pages/404/PageNotFound';
 
-import AllProducts from 'pages/dashboard/dashboard-views/AllProducts/AllProducts.js';
-import EditProducts from 'pages/dashboard/dashboard-views/EditProduct/EditProducts.js';
-import AddProduct from 'pages/dashboard/dashboard-views/AddProduct/AddProduct.js';
-
+// import AllProductView from 'pages/dashboard/dashboard-views/AllProducts/AllProductView.js';
+// import EditProducts from 'pages/dashboard/dashboard-views/EditProduct/EditProductsView.js';
+import AllProducts from 'pages/dashboard/dashboard-views/AllProducts/AllProducts';
+import AddProductView from 'pages/dashboard/dashboard-views/AddProductView/AddProductView';
+import EditProductsView from 'pages/dashboard/dashboard-views/EditProduct/EditProductsView';
 // import './styles/global-styles.css'
 function App() {
  
@@ -25,8 +26,8 @@ function App() {
           <Route Route path='dashboard/' element={<DashBoard/>}>
            
             <Route index path='all' element={<AllProducts title="All Cake Stands"/>}/>
-            <Route path='edit' element={<EditProducts title="Edit A cake Stand"/>}/>
-            <Route path='add' element={<AddProduct title="Add a Cake Stand"/>}/>
+            <Route path='edit' element={<EditProductsView title="Edit A cake Stand"/>}/>
+            <Route path='add' element={<AddProductView title="Add a Cake Stand"/>}/>
             
           </Route>
           <Route path="*" title="Unknown Page" element={<PageNotFound/>}/>

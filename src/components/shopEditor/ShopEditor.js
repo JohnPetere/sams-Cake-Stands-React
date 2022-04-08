@@ -1,8 +1,10 @@
 import React from 'react'
-
-export default function ShopEditor() {
+import { Link } from 'react-router-dom'
+import './ShopEditor.styles.css'
+export default function ShopEditor(children, productName, ...props) {
+    console.log(productName)
   return (
-    <div className="flex flex-wrap  overflow-hidden sm:-mx-0 md:-mx-0 lg:-mx-2 xl:-mx-1">
+    <div className="form-container">
     
     <form action="" id="cakeStandAddEditForm" className="
       p-5
@@ -11,29 +13,16 @@ export default function ShopEditor() {
       sm:mx-0
       md:mx-10
       sm:p-0;
-      
+      h-min
       text-cadet
-        bg-white bg-clip-padding
+    bg-white bg-clip-padding
         border border-solid border-cadet ">
         
       <div className="mx-10 mb-3 md:w-22 w-23 md:mx-0  ">
         <img src="static/svg/branding/cake-logo.svg" id="cakeStandImg" className="w-full h-full" alt=""/> 
         <label for="cakeStandImgInput" className="form-label inline-block mb-2 text-cadet">Select Cake Stand Image</label>
-        <input required name="cakeStandImgInput" id="cakeStandImgInput"  accept=".jpg, .png, .jpeg, .webp" className="form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" />
+        <input required name="cakeStandImgInput" id="cakeStandImgInput"  accept=".jpg, .png, .jpeg, .webp" className="img-input-style"
+         type="file" />
       </div>
       <div className="flex flex-wrap -mx-3 mb-0">
         <div className="w-full md:w-full px-3 mb-2 md:mb-0">
@@ -69,9 +58,9 @@ export default function ShopEditor() {
       
         </button>
      
-        <button id="delete-button" className="caret-cadet  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
+        <Link to={'/dashboard/all'} id="delete-button" className="caret-cadet  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
          Cancel
-        </button>
+        </Link>
         
       </div>
     </form>

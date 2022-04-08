@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './ShopCard.styles.css'
-export default function ShopCard() {
+export default function ShopCard(shopItem) {
   const cakeStands = {
    
       "awdwad":{
@@ -57,24 +57,22 @@ export default function ShopCard() {
     }
    
   }
-    
+  let renderedItems;
 
-       
-       let renderedItems = Object.values(cakeStands).map(cakeStand=>{
-
-        const element = (
+       if(shopItem == null){
+         renderedItems = (
           <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3">
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
-              <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src={cakeStand.image} alt={cakeStand.key}/>
+              <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg" alt/>
               <div className="px-6 py-4">
-                  <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">{cakeStand.title}</div>
-                  <p id="price" className=" text-cadet text-3xl font-bold   "> ${cakeStand.price}</p>
+                  <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">title</div>
+                  <p id="price" className=" text-cadet text-3xl font-bold   "> $12.34</p>
                   <p id="review" className="text-base text-darkPurple overflow-hidden h-10 hover:overflow-visible">
               
-                  {cakeStand.description}
+                  cake stand description goes here
                   </p>
                   <p id="radius" className="text-base text-cadet">
-                    Radius: {cakeStand.radius}
+                    Radius: 12 in
                   </p>
                   <button id="buy-button" className="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
                   Buy 
@@ -92,8 +90,44 @@ export default function ShopCard() {
       </div>
 
         );
-          return element;
-      });
+       }
+       else{
+        renderedItems = Object.values(shopItem).map(cakeStand=>{
+
+          const element = (
+            <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
+                <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src={cakeStand.image} alt={cakeStand.key}/>
+                <div className="px-6 py-4">
+                    <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">{cakeStand.title}</div>
+                    <p id="price" className=" text-cadet text-3xl font-bold   "> ${cakeStand.price}</p>
+                    <p id="review" className="text-base text-darkPurple overflow-hidden h-10 hover:overflow-visible">
+                
+                    {cakeStand.description}
+                    </p>
+                    <p id="radius" className="text-base text-cadet">
+                      Radius: {cakeStand.radius}
+                    </p>
+                    <button id="buy-button" className="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
+                    Buy 
+                    </button>
+                </div>
+                <div className="inline-flex my-2 mx-0" >
+                    <button id="edit-button" className="bg-isabelline hover:bg-gray-100  text-cadet font-bold py-2 px-4 rounded-l">
+                    Edit
+                    </button>
+                    <button id="delete-button" function="deleteThis" className="delete-button bg-isabelline hover:bg-gray-100 text-fieryRose font-bold py-2 px-4 rounded-r">
+                    Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+          );
+            return element;
+        });
+       }
+    
  
  return renderedItems
 

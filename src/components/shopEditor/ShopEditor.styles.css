@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-container{
+        @apply
+        flex 
+        flex-wrap  
+        overflow-hidden 
+        sm:-mx-0 
+        md:-mx-0 
+        lg:-mx-2 
+        xl:-mx-1
+           h-min
+    }
+    .form-styling{
+        @apply
+        h-min
+      text-cadet
+    bg-white bg-clip-padding
+        border border-solid border-cadet
+    
+    }
+    .form-bordering{
+        @apply
+        p-5
+        mx-10
+        mt-10 
+        sm:mx-0
+        md:mx-10
+        sm:p-0;
+     
+    }
+    .img-contain{
+        @apply mx-10 mb-3 md:mx-0 
+    }
+    .img-input-style{
+        @apply
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+
+    .big-input-contain{
+        @apply flex flex-wrap -mx-3 mb-0
+    }
+    .big-input-contain label{
+        @apply block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2
+    }
+    .big-input-input{
+        @apply
+        appearance-none 
+        block w-full 
+        bg-gray-200 
+        text-gray-700 
+        border border-red-500 rounded 
+        py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white
+    }
+}
