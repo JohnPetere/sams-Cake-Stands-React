@@ -1,4 +1,5 @@
 import ShopCard from 'components/shopCard/ShopCard'
+import ShopItemViewer from 'components/shopEditor/ShopItemViewer'
 import React from 'react'
 import './AllProducts.styles.css'
 export default function AllProducts(props) {
@@ -6,6 +7,7 @@ export default function AllProducts(props) {
     return (
     <div id="shop-items">
      <ShopCard/>
+    
     </div>
   )
 }
