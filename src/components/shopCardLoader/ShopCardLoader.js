@@ -21,7 +21,7 @@ export default function ShopCardLoader({children,
                   {productDesc}
                   </p>
                   <p id="radius" className="text-base text-cadet">
-                    Radius: {productRadius}
+                    Radius: {productRadius} in.
                   </p>
                   <button id="buy-button" className="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
                   Buy 
