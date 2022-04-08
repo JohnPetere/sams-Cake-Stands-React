@@ -1,1 +1,1 @@
-export {ShopEditor  as default} from './ShopEditor'
+export {default as ShopEditor} from './ShopEditor'
