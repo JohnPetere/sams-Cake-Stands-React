@@ -3,7 +3,8 @@
 
 
 
-import { ShopEditor } from 'components/ShopEditor';
+import { ProductEditor } from 'components/ProductEditor';
+// import { ShopEditor } from 'components/ShopEditor';
 import React,{useState} from 'react';
 
 // import Styles from './styles.module.css'
@@ -19,7 +20,7 @@ function AddProduct ({children, ...props})  {
   return (
         <div  className="w-screen">
      
-          <ShopEditor productName={productName} handleProductName={handleProductName}/>
+          <ProductEditor productName={productName} handleProductName={handleProductName}/>
           
         </div>
   )
