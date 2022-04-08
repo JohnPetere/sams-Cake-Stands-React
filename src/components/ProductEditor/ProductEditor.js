@@ -4,13 +4,30 @@ import ShopEditorEntryForm from 'components/shopEditorEntryForm/ShopEditorEntryF
 
 // import Styles from './styles.module.css'
 
-function ProductEditor ({children, productName, handleProductName, ...props})  {
+function ProductEditor ({children, 
+  productName, 
+  handleProductName,
+  handleProductPrice,
+  handleProductDesc,
+  handleProductRadius,
+  productPrice,
+  productDesc,
+  productRadius,
+   ...props})  {
   
   return (
         <div id="shop-item" className="flex">
            
-           <ShopEditorEntryForm handleProductName={handleProductName}/>
-          <ShopCardLoader productName={productName}/>
+           <ShopEditorEntryForm 
+           handleProductName={handleProductName}
+           handleProductPrice={handleProductPrice}
+           handleProductDesc={handleProductDesc}
+           handleProductRadius={handleProductRadius}/>
+          <ShopCardLoader 
+          productName={productName}
+          productPrice={productPrice}
+          productDesc={productDesc}
+          productRadius={productRadius}/>
         </div>
   )
 }

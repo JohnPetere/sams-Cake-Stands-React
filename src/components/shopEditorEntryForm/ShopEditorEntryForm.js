@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ShopEditorEntryForm.styles.css'
-export default function ShopEditorEntryForm({children, productName,handleProductName, ...props}) {
-    console.log(productName)
+export default function ShopEditorEntryForm({children, 
+  handleProductName,
+  handleProductPrice,
+  handleProductDesc,
+  handleProductRadius,
+   ...props}) {
+
     console.log(handleProductName)
   return (
     <div className="form-container"{...props}>
@@ -32,7 +37,22 @@ export default function ShopEditorEntryForm({children, productName,handleProduct
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="productTitle" type="text" placeholder="large Cake Stand" required
+          
           onChange={(e)=>handleProductName(e.target.value.trim())} maxLength="10"
+          />
+          
+        </div>
+      
+      </div>
+      <div className="flex flex-wrap -mx-3 mb-0">
+        <div className="w-full md:w-full px-3 mb-2 md:mb-0">
+          <label className="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2" for="grid-first-name">
+          Description
+          </label>
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          id="productTitle" type="text" placeholder="It is very large" required maxLength="30"
+         
+          onChange={(e)=>handleProductDesc(e.target.value.trim())}
           />
           
         </div>
@@ -44,15 +64,21 @@ export default function ShopEditorEntryForm({children, productName,handleProduct
           Price
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
-          id="standPrice" type="number" placeholder="12.34" required/>
+          id="standPrice" type="number" placeholder="12.34" max="99999" step=".01" min="1" required
+         
+          onChange={(e)=>handleProductPrice(e.target.value.trim())}
+          />
           
         </div>
         <div className="w-full md:w-1/2 px-3">
-          <label className="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2" for="grid-last-name" >
+          <label className="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2 border-red-500" for="grid-last-name" >
           Radius
+          
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-cadet border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
-          id="standRadius" type="number" placeholder="12.34" required/>
+          <input className="appearance-none block w-full bg-gray-200 text-cadet border border-red-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+          id="standRadius" type="number" placeholder="12.34" required
+          onChange={(e)=>handleProductRadius(e.target.value.trim())}
+          />
         </div>
       </div>
       <div className="inline-flex my-2 mx-0" >

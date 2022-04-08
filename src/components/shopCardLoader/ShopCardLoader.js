@@ -2,34 +2,32 @@
 import React from 'react'
 import './ShopCardLoader.styles.css'
 
-export default function ShopCardLoader({children, productName, ...props}) {
+export default function ShopCardLoader({children,
+     productName,
+     productPrice,
+     productDesc,
+     productRadius,
+      ...props}) {
 // This is a comment
         const element = (
-          <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3" {...props}>
+          <div  id="shop-item-card" className="  my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3 my-14" {...props}>
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
               <img id="propsImgID" className=" w-fill h-48 object-contain mx-auto  " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg" alt={props.key}/>
               <div className="px-6 py-4">
-                  <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">{productName}</div>
-                  <p id="price" className=" text-cadet text-3xl font-bold   "> ${props.price}</p>
+                  <div id="title" className="font-bold text-xl mb-2 text-darkPurple" max="5">{productName}</div>
+                  <p id="price" className=" text-cadet text-3xl font-bold   "> ${productPrice}</p>
                   <p id="review" className="text-base text-darkPurple overflow-hidden h-10 hover:overflow-visible">
               
-                  {props.description}
+                  {productDesc}
                   </p>
                   <p id="radius" className="text-base text-cadet">
-                    Radius: {props.radius}
+                    Radius: {productRadius}
                   </p>
                   <button id="buy-button" className="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
                   Buy 
                   </button>
               </div>
-              <div className="inline-flex my-2 mx-0" >
-                  <button id="edit-button" className="bg-isabelline hover:bg-gray-100  text-cadet font-bold py-2 px-4 rounded-l">
-                  Edit
-                  </button>
-                  <button id="delete-button" function="deleteThis" className="delete-button bg-isabelline hover:bg-gray-100 text-fieryRose font-bold py-2 px-4 rounded-r">
-                  Delete
-                  </button>
-              </div>
+           
           </div>
       </div>
 
