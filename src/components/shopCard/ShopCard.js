@@ -2,61 +2,61 @@
 import React from 'react'
 import './ShopCard.styles.css'
 export default function ShopCard(shopItem) {
-  const cakeStands = {
+  // const cakeStands = {
    
-      "awdwad":{
-        "key": "key1",
-        "title":"Cake Stand Cat",
-        "sku": "sku1",
-        "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
-        "price":"12.22",
-        "radius":"22",
-        "description": "No CakeStand only cats here Ya bass tarts"
+  //     "awdwad":{
+  //       "key": "key1",
+  //       "title":"Cake Stand Cat",
+  //       "sku": "sku1",
+  //       "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
+  //       "price":"12.22",
+  //       "radius":"22",
+  //       "description": "No CakeStand only cats here Ya bass tarts"
   
-      },
-      "awdwad2":{
-        "key": "key2",
-        "title":"cakeStand Kitty",
-        "sku": "sku2",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yVwaBg7hGQy1-GQg5J6v54BFKyocy51zbXYCW7pIyzDwqFz_AbmlLH7friFJS7IgG7w&usqp=CAU",
-        "price":"12.33",
-        "radius":"23",
-        "description": "WHY IS THERE PICTURES CATS"
-      },
-      "awdwad3":{
-        "key": "key3",  
-        "title":"notCakeStand Kitty",
-        "sku": "sku3",
-        "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
-        "price":"12.77",
-        "radius":"25",
-        "description": "I LOVE CATS"
+  //     },
+  //     "awdwad2":{
+  //       "key": "key2",
+  //       "title":"cakeStand Kitty",
+  //       "sku": "sku2",
+  //       "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yVwaBg7hGQy1-GQg5J6v54BFKyocy51zbXYCW7pIyzDwqFz_AbmlLH7friFJS7IgG7w&usqp=CAU",
+  //       "price":"12.33",
+  //       "radius":"23",
+  //       "description": "WHY IS THERE PICTURES CATS"
+  //     },
+  //     "awdwad3":{
+  //       "key": "key3",  
+  //       "title":"notCakeStand Kitty",
+  //       "sku": "sku3",
+  //       "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
+  //       "price":"12.77",
+  //       "radius":"25",
+  //       "description": "I LOVE CATS"
         
     
-    },
-    "awdwas3":{
-      "key": "key3",  
-      "title":"notCakeStand Kitty",
-      "sku": "sku3",
-      "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
-      "price":"12.77",
-      "radius":"25",
-      "description": "I LOVE CATS"
+  //   },
+  //   "awdwas3":{
+  //     "key": "key3",  
+  //     "title":"notCakeStand Kitty",
+  //     "sku": "sku3",
+  //     "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
+  //     "price":"12.77",
+  //     "radius":"25",
+  //     "description": "I LOVE CATS"
       
   
-    },
-    "awdrtad":{
-      "key": "key1",
-      "title":"Cake Stand Cat",
-      "sku": "sku1",
-      "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
-      "price":"12.22",
-      "radius":"22",
-      "description": "No CakeStand only cats here Ya bass tarts "
+  //   },
+  //   "awdrtad":{
+  //     "key": "key1",
+  //     "title":"Cake Stand Cat",
+  //     "sku": "sku1",
+  //     "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
+  //     "price":"12.22",
+  //     "radius":"22",
+  //     "description": "No CakeStand only cats here Ya bass tarts "
 
-    }
+  //   }
    
-  }
+  // }
   let renderedItems;
 
        if(shopItem == null){
