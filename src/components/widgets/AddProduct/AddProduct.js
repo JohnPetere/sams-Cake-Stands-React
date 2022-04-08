@@ -1,5 +1,5 @@
 // import { ShopEditor } from 'components/ShopEditor';
-import ShopEditor from '../../../components/ShopEditor/ShopEditor';
+// import ShopEditor from '../../../components/ShopEditor/ShopEditor';
 import React, {useState} from 'react';
 
 // import Styles from './styles.module.css'
@@ -15,7 +15,7 @@ function AddProduct ({children, ...props})  {
   return (
         <div  className="w-screen">
      
-          <ShopEditor productName={productName} handleProductName={handleProductName}/>
+          {/* <ShopEditor productName={productName} handleProductName={handleProductName}/> */}
           
         </div>
   )
