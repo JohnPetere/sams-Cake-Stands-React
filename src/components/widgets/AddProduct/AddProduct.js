@@ -7,11 +7,11 @@ import React, {useState} from 'react';
 // import ShopEditor from 'components/ShopEditor/ShopEditor';
 
 function AddProduct ({children, ...props})  {
-  const [productName, setProductName] = useState('Product Name')
+  // const [productName, setProductName] = useState('Product Name')
 
-  function handleProductName(name){
-    setProductName(name)
-  }
+  // function handleProductName(name){
+    // setProductName(name)
+  // }
   return (
         <div  className="w-screen">
      
