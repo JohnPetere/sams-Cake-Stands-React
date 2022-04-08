@@ -6,13 +6,14 @@
     .form-container{
         @apply
         flex 
-        flex-wrap  
+        flex-row 
         overflow-hidden 
         sm:-mx-0 
         md:-mx-0 
         lg:-mx-2 
         xl:-mx-1
            h-min
+           w-min
     }
     .form-styling{
         @apply
