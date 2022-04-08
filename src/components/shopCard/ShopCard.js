@@ -2,68 +2,68 @@
 import React from 'react'
 import './ShopCard.styles.css'
 export default function ShopCard(shopItem) {
-  const cakeStands = {
+  // const cakeStands = {
    
-      "awdwad":{
-        "key": "key1",
-        "title":"Cake Stand Cat",
-        "sku": "sku1",
-        "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
-        "price":"12.22",
-        "radius":"22",
-        "description": "No CakeStand only cats here Ya bass tarts"
+  //     "awdwad":{
+  //       "key": "key1",
+  //       "title":"Cake Stand Cat",
+  //       "sku": "sku1",
+  //       "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
+  //       "price":"12.22",
+  //       "radius":"22",
+  //       "description": "No CakeStand only cats here Ya bass tarts"
   
-      },
-      "awdwad2":{
-        "key": "key2",
-        "title":"cakeStand Kitty",
-        "sku": "sku2",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yVwaBg7hGQy1-GQg5J6v54BFKyocy51zbXYCW7pIyzDwqFz_AbmlLH7friFJS7IgG7w&usqp=CAU",
-        "price":"12.33",
-        "radius":"23",
-        "description": "WHY IS THERE PICTURES CATS"
-      },
-      "awdwad3":{
-        "key": "key3",  
-        "title":"notCakeStand Kitty",
-        "sku": "sku3",
-        "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
-        "price":"12.77",
-        "radius":"25",
-        "description": "I LOVE CATS"
+  //     },
+  //     "awdwad2":{
+  //       "key": "key2",
+  //       "title":"cakeStand Kitty",
+  //       "sku": "sku2",
+  //       "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yVwaBg7hGQy1-GQg5J6v54BFKyocy51zbXYCW7pIyzDwqFz_AbmlLH7friFJS7IgG7w&usqp=CAU",
+  //       "price":"12.33",
+  //       "radius":"23",
+  //       "description": "WHY IS THERE PICTURES CATS"
+  //     },
+  //     "awdwad3":{
+  //       "key": "key3",  
+  //       "title":"notCakeStand Kitty",
+  //       "sku": "sku3",
+  //       "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
+  //       "price":"12.77",
+  //       "radius":"25",
+  //       "description": "I LOVE CATS"
         
     
-    },
-    "awdwas3":{
-      "key": "key3",  
-      "title":"notCakeStand Kitty",
-      "sku": "sku3",
-      "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
-      "price":"12.77",
-      "radius":"25",
-      "description": "I LOVE CATS"
+  //   },
+  //   "awdwas3":{
+  //     "key": "key3",  
+  //     "title":"notCakeStand Kitty",
+  //     "sku": "sku3",
+  //     "image":"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg",
+  //     "price":"12.77",
+  //     "radius":"25",
+  //     "description": "I LOVE CATS"
       
   
-    },
-    "awdrtad":{
-      "key": "key1",
-      "title":"Cake Stand Cat",
-      "sku": "sku1",
-      "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
-      "price":"12.22",
-      "radius":"22",
-      "description": "No CakeStand only cats here Ya bass tarts "
+  //   },
+  //   "awdrtad":{
+  //     "key": "key1",
+  //     "title":"Cake Stand Cat",
+  //     "sku": "sku1",
+  //     "image":"https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg",
+  //     "price":"12.22",
+  //     "radius":"22",
+  //     "description": "No CakeStand only cats here Ya bass tarts "
 
-    }
+  //   }
    
-  }
+  // }
   let renderedItems;
 
        if(shopItem == null){
          renderedItems = (
           <div  id="shop-item-card" className="my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3">
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
-              <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg" alt/>
+              <img id="cakeStandImgID" className=" w-fill h-48 object-contain mx-auto  " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg" alt="product of a shop item"/>
               <div className="px-6 py-4">
                   <div id="title" className="font-bold text-xl mb-2 text-darkPurple ">title</div>
                   <p id="price" className=" text-cadet text-3xl font-bold   "> $12.34</p>
