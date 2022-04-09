@@ -23,6 +23,7 @@ function AddProduct ({children, ...props})  {
   const [loading, productLoader] = useAddNewProduct();
   // useAddNewProduct();
   // const [loading, productLoader] = useAddNewProduct();
+  console.log(loading);
   function handleProductName(name){
     setProductName(name)
   }
@@ -46,7 +47,7 @@ function AddProduct ({children, ...props})  {
     }
     // console.log(productData)
     setIsWriting(true)
-    productLoader(productData, productImage)
+    productLoader(productData, productImage.file)
     // productLoader(productData, productImage)
   }
 
