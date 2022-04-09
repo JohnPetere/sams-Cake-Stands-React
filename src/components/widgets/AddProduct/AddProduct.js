@@ -15,11 +15,18 @@ import ProductPreview from '../../../styles/img/white-cat.jpg'
 // import ShopEditor from 'components/ShopEditor/ShopEditor';
 
 function AddProduct ({children, ...props})  {
+  const defaults={
+    title:"Big Cow",
+    desc:"I love big cows",
+    radius:"12.34",
+    price:"12.34"
+    
+  }
   const [isWriting, setIsWriting] = useState(false);
-  const [productName, setProductName] = useState('Product Name');
-  const [productPrice, setProductPrice] = useState('12.34');
-  const [productDesc, setProductDesc] = useState('Lorem Ipsum Cats are awesome');
-  const [productRadius, setProductRadius] = useState('5in');
+  const [productName, setProductName] = useState(defaults.title);
+  const [productPrice, setProductPrice] = useState(defaults.price);
+  const [productDesc, setProductDesc] = useState(defaults.desc);
+  const [productRadius, setProductRadius] = useState(defaults.radius);
   const [productImage, setProductImage] = useState({previewImage:ProductPreview, file:null})
   const [loading, productLoader] = useAddNewProduct();
   // useAddNewProduct();
@@ -38,13 +45,7 @@ function AddProduct ({children, ...props})  {
     setProductRadius(radius)
   }
   
-  const defaults={
-    title:"Big Cow",
-    desc:"I love big cows",
-    radius:"12.34",
-    price:"12.34"
-    
-  }
+
   function handleSubmit(e){
     e.preventDefault();
     // HOW

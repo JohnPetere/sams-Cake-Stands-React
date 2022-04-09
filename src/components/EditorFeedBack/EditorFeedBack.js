@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import  "./styles.module.css";
+import './EditorFeedBack.styles.css'
 // import Link from "react-dom";
 function EditorFeedBack({ children, status, writeCompleted, ...props }) {
   const navigator = useNavigate();
@@ -18,7 +18,8 @@ function EditorFeedBack({ children, status, writeCompleted, ...props }) {
       ) : (
         <p>PRODUCT LOADING</p>
       )}
-      <button disabled={writeCompleted} onClick={()=>navigator('dashboard/add')} >View all Navigator</button>
+      <button onClick={()=>navigator('/dashboard')} >View all Navigator</button>
+      <button disabled={status} onClick={()=> writeCompleted(false)} >Add Another</button>
     </div>
   );
 

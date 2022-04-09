@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer components{
-    #feedBackView{
-        @apply text-fieryRose
+    .feedBackView{
+        @apply text-fieryRose bg-black h-min w-auto mx-auto mt-20
     }
     
 }
