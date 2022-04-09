@@ -44,12 +44,14 @@ function AddProduct ({children, ...props})  {
 
   console.log("Add Product Component,",productImage)
   if(isWriting){
+    console.log("isWriting: ", isWriting);
     return <h1>Product FeedBack Component Goes Here</h1>
   }
   else{
+
+    console.log("isWriting: ", isWriting);
     return (
       <div  className="w-screen">
-   
         <ProductEditor
          productName={productName} handleProductName={handleProductName}
           productPrice={productPrice} handleProductPrice={handleProductPrice}
