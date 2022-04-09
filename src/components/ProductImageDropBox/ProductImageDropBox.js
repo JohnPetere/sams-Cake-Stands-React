@@ -32,7 +32,7 @@
       
         <div {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input {...getInputProps()} onChange={workingThing} />
-          <p>Product Image Upload</p>
+          <p>Drag and Drop only. Selecting file does not work</p>
         </div>
        
        
