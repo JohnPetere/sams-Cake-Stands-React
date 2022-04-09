@@ -3,6 +3,7 @@
 
 
 
+import { EditorFeedBack } from 'components/EditorFeedBack';
 import { ProductEditor } from 'components/ProductEditor';
 // import { ShopEditor } from 'components/ShopEditor';
 // import{useAddNewProduct} from '../../../hooks/useAddNewProduct'
@@ -36,6 +37,14 @@ function AddProduct ({children, ...props})  {
   function handleProductRadius(radius){
     setProductRadius(radius)
   }
+  
+  const defaults={
+    title:"Big Cow",
+    desc:"I love big cows",
+    radius:"12.34",
+    price:"12.34"
+    
+  }
   function handleSubmit(e){
     e.preventDefault();
     // HOW
@@ -44,23 +53,30 @@ function AddProduct ({children, ...props})  {
       productDesc,
       productPrice,
       productRadius
+
     }
     // console.log(productData)
     setIsWriting(true)
     productLoader(productData, productImage.file)
+    setProductDesc(defaults.desc);
+    setProductRadius(defaults.radius);
+    setProductImage({previewImage:ProductPreview, file:null})
+    setProductName(defaults.title);
+
     // productLoader(productData, productImage)
   }
 
   console.log("Add Product Component,",productImage)
   if(isWriting){
     // console.log("isWriting: ", isWriting);
-    return <h1>Product FeedBack Component Goes Here</h1>
+    return       <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
   }
   else{
 
-    console.log("isWriting: ", isWriting);
+ 
     return (
       <div  className="w-screen">
+    
         <ProductEditor
          productName={productName} handleProductName={handleProductName}
           productPrice={productPrice} handleProductPrice={handleProductPrice}
