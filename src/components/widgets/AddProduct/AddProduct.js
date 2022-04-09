@@ -12,7 +12,7 @@ import ProductPreview from '../../../styles/img/white-cat.jpg'
 // import ShopEditor from 'components/ShopEditor/ShopEditor';
 
 function AddProduct ({children, ...props})  {
-  const[isWriting, setIsWriting] = useState(false)
+  const [isWriting, setIsWriting] = useState(false);
   const [productName, setProductName] = useState('Product Name');
   const [productPrice, setProductPrice] = useState('12.34');
   const [productDesc, setProductDesc] = useState('Lorem Ipsum Cats are awesome');
@@ -32,19 +32,19 @@ function AddProduct ({children, ...props})  {
   }
   function handleSubmit(e){
     e.preventDefault();
-    const productData ={
+    const productData = {
       productName, 
-      productPrice,
       productDesc,
-      productRadius,
-      
+      productPrice,
+      productRadius
     }
-    console.log("handleSUBmitPRESSEd", productData )
+    console.log(productData)
     setIsWriting(true)
   }
+
   console.log("Add Product Component,",productImage)
   if(isWriting){
-      return  <h1>Editor Feedback component</h1>
+    return <h1>Product FeedBack Component Goes Here</h1>
   }
   else{
     return (
@@ -57,13 +57,12 @@ function AddProduct ({children, ...props})  {
           productRadius={productRadius} handleProductRadius={handleProductRadius}
           productImage={productImage} setProductImage={setProductImage}
           handleSubmit={handleSubmit}
-
         />
         
       </div>
 )
   }
-  
+ 
 }
 
 export default AddProduct
