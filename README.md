@@ -19,17 +19,13 @@
 ## TODO
 ### Priority
 - [ ] Content is loaded from firebase Database
-  - [ ] Conditional rendering, while waiting for rendering from real time databse
-- [ ] Add Functionality
-  - [ ] Rendered shop-item-card is loaded to show what it what load like when added
-  - [ ] uploaded to database message / UI component
-  - [ ] succcesfully added to database / UI component
-  - [ ] Let user add more shop-item button, or view all 
+  - [ ] IF Time:  Conditional rendering, while waiting for rendering from real time databse
+
 - [ ] Update Functionality
   - [ ] Rendered shop-item-card is loaded to show what it what load like when added
-  - [ ] uploaded to database message / UI component
-  - [ ] succcesfully added to database / UI component
-  - [ ] Let user add more shop-item button, or view all 
+  - [x ] uploaded to database message / UI component
+  - [ x] succcesfully added to database / UI component
+  - [ ] Let user add more shop-item button, or view al
 
 
 
@@ -38,7 +34,7 @@
 ### Later
 - [ ] Delete cake stand functionality
 - [ ] Payment incorporation
-- [ ] 
+
 
 ## To Do if time
 - Add in tawilwind classes to clean up html
@@ -51,6 +47,11 @@
 - Even more ITEMS
 
 ## Completed
+- [x] Add Functionality
+  - [x] Rendered shop-item-card is loaded to show what it what load like when added
+  - [x] uploaded to database message / UI component
+  - [x] succcesfully added to database / UI component
+  - [x] Let user add more shop-item button, or view all 
 - [ x] Add in Nested Routes (dones't have to work or be filled yet)
      - [x] Add Page
      - [x ] Loads Add Page
@@ -89,3 +90,4 @@ npx tailwindcss init
 ### documentation/ references
 - [Toastify](https://fkhadra.github.io/react-toastify/positioning-toast)
 - [Fixing web pack issue] (https://stackoverflow.com/questions/69665222/node-js-17-0-1-gatsby-error-digital-envelope-routinesunsupported-err-os)
+- [Custom Loading loop wheel] (https://loading.io/spinner/)
