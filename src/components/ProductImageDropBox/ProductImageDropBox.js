@@ -30,7 +30,7 @@
 
      return( 
       
-        <div className='border-2 p-2 text-2m rounded-xl border-dashed' {...getRootProps({isFocused, isDragAccept, isDragReject})}>
+        <div className='border-2 p-2 text-2m rounded-xl border-dashed border-cadet' {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input  {...getInputProps()} onChange={workingThing} />
           <p>Drag and Drop only works. Images Required</p>
         </div>
