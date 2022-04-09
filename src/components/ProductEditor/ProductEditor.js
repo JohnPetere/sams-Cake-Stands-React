@@ -15,6 +15,7 @@ function ProductEditor ({children,
   productDesc,
   productRadius,
   productImage,
+  handleSubmit,
    ...props})  {
   console.log("ProductEditorComponent", productImage)
   return (
@@ -25,7 +26,9 @@ function ProductEditor ({children,
            handleProductPrice={handleProductPrice}
            handleProductDesc={handleProductDesc}
            handleProductRadius={handleProductRadius}
-          setProductImage={setProductImage}/>
+           setProductImage={setProductImage}
+           handleSubmit={handleSubmit}
+           />
           <ShopCardLoader 
           productName={productName}
           productPrice={productPrice}
