@@ -11,7 +11,7 @@ export default function ShopCardLoader({children,
       ...props}) {
 // This is a comment
         const element = (
-          <div  id="shop-item-card" className="  my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3 my-14" {...props}>
+          <div  id="shop-item-card" className=" px-3 w-1/3  my-10  " {...props}>
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
               {/* <img id="propsImgID" className=" w-fill h-48 object-contain mx-auto  " src={productImage} alt={props.key}/>
                */}

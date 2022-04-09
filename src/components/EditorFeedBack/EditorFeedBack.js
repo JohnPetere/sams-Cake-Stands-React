@@ -1,28 +1,37 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import './EditorFeedBack.styles.css'
-// import Link from "react-dom";
+import "./EditorFeedBack.styles.css";
+import { ReactComponent as Spinner } from "../../styles/svg/customer-spinner.svg";
+import { ReactComponent as CheckMark } from "../../styles/svg/custom-checkmark.svg"
 function EditorFeedBack({ children, status, writeCompleted, ...props }) {
   const navigator = useNavigate();
-  console.log("isWriting",writeCompleted );
+ 
   return (
     <div className="feedBackView">
-      <h2>EditorFeedBack Componenst is success</h2>
       {children}
       {!status ? (
-        <p>
-         
-         Product has been uploaded
-        
-        </p>
+        <div className="loaded">
+          <CheckMark className="checkmark"/>
+          <p>Uploaded</p>
+        </div>
       ) : (
-        <p>PRODUCT LOADING</p>
+        <div className="loadingView">
+          <Spinner className="spinner" />
+          <p className="">uploading...</p>
+        </div>
       )}
-      <button onClick={()=>navigator('/dashboard')} >View all Navigator</button>
-      <button disabled={status} onClick={()=> writeCompleted(false)} >Add Another</button>
+      <button className="button" onClick={() => navigator("/dashboard")}>
+        View Stands
+      </button>
+      <button
+        className="button"
+        disabled={status}
+        onClick={() => writeCompleted(false)}
+      >
+        Add Stand
+      </button>
     </div>
   );
-
 }
 
 export default EditorFeedBack;

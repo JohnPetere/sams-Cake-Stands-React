@@ -4,7 +4,37 @@
 
 @layer components{
     .feedBackView{
-        @apply text-fieryRose bg-black h-min w-auto mx-auto mt-20
+        @apply text-fieryRose h-min w-auto mx-auto mt-20 h-80
     }
+    .loadingView{
+        @apply text-center
+        font-dancingScript
+        text-4xl
+        py-3
+    }
+    
+    .spinner{
+        @apply w-40 h-40
+    }
+    .loaded{
+        @apply text-center text-aeroBlue text-4xl py-3 font-dancingScript
+    }
+    .checkmark{
+        @apply w-40 h-40 mx-auto
+    }
+    .button{
+        @apply bg-aeroBlue 
+        hover:bg-isabelline
+         hover:text-cadet
+          text-darkPurple 
+          font-bold
+           py-3
+           px-10
+             mt-3
+              rounded-full mx-1
+              w-44
+
+    }
+
     
 }

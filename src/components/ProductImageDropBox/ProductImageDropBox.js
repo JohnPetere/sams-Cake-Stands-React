@@ -30,9 +30,9 @@
 
      return( 
       
-        <div {...getRootProps({isFocused, isDragAccept, isDragReject})}>
-          <input {...getInputProps()} onChange={workingThing} />
-          <p>Drag and Drop only. Selecting file does not work</p>
+        <div className='border-2 p-2 text-2m rounded-xl border-dashed' {...getRootProps({isFocused, isDragAccept, isDragReject})}>
+          <input  {...getInputProps()} onChange={workingThing} />
+          <p>Drag and Drop only works. Images Required</p>
         </div>
        
        
