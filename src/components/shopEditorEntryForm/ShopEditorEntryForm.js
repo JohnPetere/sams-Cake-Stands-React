@@ -15,7 +15,7 @@ export default function ShopEditorEntryForm({children,
   return (
     <div className="form-container"{...props}>
     
-    <form action="" onSubmit={handleSubmit} id="cakeStandAddEditForm" className="
+    <form action="" id="cakeStandAddEditForm"  onSubmit={handleSubmit} className="
       p-5
       mx-10
       mt-10 
