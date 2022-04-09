@@ -35,26 +35,35 @@ function AddProduct ({children, ...props})  {
     const productData ={
       productName, 
       productPrice,
-      productDesc
+      productDesc,
+      productRadius,
+      
     }
+    console.log("handleSUBmitPRESSEd", productData )
     setIsWriting(true)
   }
   console.log("Add Product Component,",productImage)
-  return (
-        <div  className="w-screen">
-     
-          <ProductEditor
-           productName={productName} handleProductName={handleProductName}
-            productPrice={productPrice} handleProductPrice={handleProductPrice}
-            productDesc={productDesc} handleProductDesc={handleProductDesc}
-            productRadius={productRadius} handleProductRadius={handleProductRadius}
-            productImage={productImage} setProductImage={setProductImage}
-            handleSubmit={handleSubmit}
+  if(isWriting){
+      return  <h1>Editor Feedback component</h1>
+  }
+  else{
+    return (
+      <div  className="w-screen">
+   
+        <ProductEditor
+         productName={productName} handleProductName={handleProductName}
+          productPrice={productPrice} handleProductPrice={handleProductPrice}
+          productDesc={productDesc} handleProductDesc={handleProductDesc}
+          productRadius={productRadius} handleProductRadius={handleProductRadius}
+          productImage={productImage} setProductImage={setProductImage}
+          handleSubmit={handleSubmit}
 
-          />
-          
-        </div>
-  )
+        />
+        
+      </div>
+)
+  }
+  
 }
 
 export default AddProduct
