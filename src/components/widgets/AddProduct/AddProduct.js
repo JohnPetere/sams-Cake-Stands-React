@@ -32,6 +32,7 @@ function AddProduct ({children, ...props})  {
   }
   function handleSubmit(e){
     e.preventDefault();
+    // HOW
     const productData = {
       productName, 
       productDesc,
