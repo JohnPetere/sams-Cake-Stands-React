@@ -5,6 +5,8 @@
 
 import { ProductEditor } from 'components/ProductEditor';
 // import { ShopEditor } from 'components/ShopEditor';
+// import{useAddNewProduct} from '../../../hooks/useAddNewProduct'
+import { useAddNewProduct } from 'hooks/useAddNewProduct';
 import React,{useState} from 'react';
 import ProductPreview from '../../../styles/img/white-cat.jpg'
 // import Styles from './styles.module.css'
@@ -18,6 +20,9 @@ function AddProduct ({children, ...props})  {
   const [productDesc, setProductDesc] = useState('Lorem Ipsum Cats are awesome');
   const [productRadius, setProductRadius] = useState('5in');
   const [productImage, setProductImage] = useState(ProductPreview)
+  const [loading, productLoader] = useAddNewProduct();
+  // useAddNewProduct();
+  // const [loading, productLoader] = useAddNewProduct();
   function handleProductName(name){
     setProductName(name)
   }
@@ -39,13 +44,15 @@ function AddProduct ({children, ...props})  {
       productPrice,
       productRadius
     }
-    console.log(productData)
+    // console.log(productData)
     setIsWriting(true)
+    productLoader(productData, productImage)
+    // productLoader(productData, productImage)
   }
 
   console.log("Add Product Component,",productImage)
   if(isWriting){
-    console.log("isWriting: ", isWriting);
+    // console.log("isWriting: ", isWriting);
     return <h1>Product FeedBack Component Goes Here</h1>
   }
   else{

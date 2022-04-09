@@ -8,7 +8,7 @@ import React from 'react'
 
 function AddProductView(props) {
   // const [productName, setProductName] = useState('productName')
-  console.log("ADD PRODUCT", )
+  // console.log("ADD PRODUCT", )
   return (
     <>
       <AddProduct/>

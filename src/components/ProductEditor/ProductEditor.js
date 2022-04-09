@@ -17,7 +17,7 @@ function ProductEditor ({children,
   productImage,
   handleSubmit,
    ...props})  {
-  console.log("ProductEditorComponent", productImage)
+  // console.log("ProductEditorComponent", productImage)
   return (
         <div id="shop-item" className="flex">
            
