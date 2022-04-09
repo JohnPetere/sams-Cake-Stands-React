@@ -1,14 +1,14 @@
-//  import { setPersistence } from 'firebase/auth';
-import React, {useCallback} from 'react'
+ import React, {useCallback} from 'react'
  import {useDropzone} from 'react-dropzone'
 //  import {ProductImageDropBoxStyles} from './styles';
 
-function ProductImageDropBox  ({setProductImage, ...props}){
 
+ function ProductImageDropBox  ({setProductImage, ...props}){
+   
   const onDrop = useCallback(acceptedFiles => {
     const file = acceptedFiles[0] ; 
     console.log(file)        
-    setProductImage({previewImage:URL.createObjectURL(file)})
+    setProductImage({previewImage:URL.createObjectURL(file), file:acceptedFiles[0]})
   }, [setProductImage])
   
   const {
@@ -32,7 +32,7 @@ function ProductImageDropBox  ({setProductImage, ...props}){
       
         <div {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input {...getInputProps()} onChange={workingThing} />
-          <p>Drag Img here. Dragging only working</p>
+          <p>Product Image Upload</p>
         </div>
        
        

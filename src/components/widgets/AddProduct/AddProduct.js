@@ -19,7 +19,7 @@ function AddProduct ({children, ...props})  {
   const [productPrice, setProductPrice] = useState('12.34');
   const [productDesc, setProductDesc] = useState('Lorem Ipsum Cats are awesome');
   const [productRadius, setProductRadius] = useState('5in');
-  const [productImage, setProductImage] = useState(ProductPreview)
+  const [productImage, setProductImage] = useState({previewImage:ProductPreview, file:null})
   const [loading, productLoader] = useAddNewProduct();
   // useAddNewProduct();
   // const [loading, productLoader] = useAddNewProduct();
