@@ -1,3 +1,4 @@
+import { ProductImageDropBox } from 'components/ProductImageDropBox'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ShopEditorEntryForm.styles.css'
@@ -6,9 +7,10 @@ export default function ShopEditorEntryForm({children,
   handleProductPrice,
   handleProductDesc,
   handleProductRadius,
+  setProductImage,
    ...props}) {
 
-    console.log(handleProductName)
+ 
   return (
     <div className="form-container"{...props}>
     
@@ -27,8 +29,9 @@ export default function ShopEditorEntryForm({children,
       <div className="mx-10 mb-3 md:w-22 w-23 md:mx-0  ">
         <img src="static/svg/branding/cake-logo.svg" id="cakeStandImg" className="w-full h-full" alt=""/> 
         <label for="cakeStandImgInput" className="form-label inline-block mb-2 text-cadet">Select Cake Stand Image</label>
-        <input required name="cakeStandImgInput" id="cakeStandImgInput"  accept=".jpg, .png, .jpeg, .webp" className="img-input-style"
-         type="file" />
+        {/* <input required name="cakeStandImgInput" id="cakeStandImgInput"  accept=".jpg, .png, .jpeg, .webp" className="img-input-style"
+         type="file" /> */}
+        <ProductImageDropBox setProductImage={setProductImage}/>
       </div>
       <div className="flex flex-wrap -mx-3 mb-0">
         <div className="w-full md:w-full px-3 mb-2 md:mb-0">

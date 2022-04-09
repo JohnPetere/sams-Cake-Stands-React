@@ -7,12 +7,17 @@ export default function ShopCardLoader({children,
      productPrice,
      productDesc,
      productRadius,
+     productImage,
       ...props}) {
 // This is a comment
         const element = (
           <div  id="shop-item-card" className="  my-3 px-3 w-1/2 overflow-hidden md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:w-1/3 my-14" {...props}>
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-isabelline">
-              <img id="propsImgID" className=" w-fill h-48 object-contain mx-auto  " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cat_img.jpg" alt={props.key}/>
+              {/* <img id="propsImgID" className=" w-fill h-48 object-contain mx-auto  " src={productImage} alt={props.key}/>
+               */}
+            
+                   <img src={productImage.previewImage} className=" w-fill h-48 object-contain mx-auto" alt=" cake Stand shop item" />
+               
               <div className="px-6 py-4">
                   <div id="title" className="font-bold text-xl mb-2 text-darkPurple" max="5">{productName}</div>
                   <p id="price" className=" text-cadet text-3xl font-bold   "> ${productPrice}</p>

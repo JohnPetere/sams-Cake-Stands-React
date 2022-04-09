@@ -10,11 +10,13 @@ function ProductEditor ({children,
   handleProductPrice,
   handleProductDesc,
   handleProductRadius,
+  setProductImage,
   productPrice,
   productDesc,
   productRadius,
+  productImage,
    ...props})  {
-  
+  console.log("ProductEditorComponent", productImage)
   return (
         <div id="shop-item" className="flex">
            
@@ -22,12 +24,14 @@ function ProductEditor ({children,
            handleProductName={handleProductName}
            handleProductPrice={handleProductPrice}
            handleProductDesc={handleProductDesc}
-           handleProductRadius={handleProductRadius}/>
+           handleProductRadius={handleProductRadius}
+          setProductImage={setProductImage}/>
           <ShopCardLoader 
           productName={productName}
           productPrice={productPrice}
           productDesc={productDesc}
-          productRadius={productRadius}/>
+          productRadius={productRadius}
+          productImage={productImage}/>
         </div>
   )
 }
