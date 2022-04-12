@@ -27,15 +27,15 @@ export default function DashBar(props) {
                 
                 <Link to={'/dashboard/all'} className="side-bar-item">
                     <Inventory className="side-bar-icon "/>
-                   View Inventory
+                   View All
                 </Link>
                 <Link to={"add"} className="side-bar-item">
                     <Add className="side-bar-icon "/>
-                   Add a Stand
+                   Add Cake Stand
                 </Link>
                 <Link to={"edit"} className="side-bar-item">
                     <Edit className="side-bar-icon "/>
-                    Edit Stands
+                    Edit Cake Stands
                 </Link>
                 <Link to={'/dashboard'} className="side-bar-item">
                     <Report className="side-bar-icon "/>
